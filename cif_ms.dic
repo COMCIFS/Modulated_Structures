@@ -230,7 +230,7 @@ save_atom_site_displace_Fourier.atom_site_label
     _type.purpose                Link
     _type.source                 Related
     _type.container              Single
-    _type.contents               Code
+    _type.contents               Word
 
 save_
 
@@ -692,7 +692,7 @@ save_atom_site_displace_Legendre.atom_site_label
     _type.purpose                Link
     _type.source                 Related
     _type.container              Single
-    _type.contents               Code
+    _type.contents               Word
 
 save_
 
@@ -951,7 +951,7 @@ save_atom_site_displace_ortho.atom_site_label
     _type.purpose                Link
     _type.source                 Related
     _type.container              Single
-    _type.contents               Code
+    _type.contents               Word
 
 save_
 
@@ -1225,7 +1225,7 @@ save_atom_site_displace_special_func.atom_site_label
     _type.purpose                Link
     _type.source                 Related
     _type.container              Single
-    _type.contents               Code
+    _type.contents               Word
 
 save_
 
@@ -1809,7 +1809,7 @@ save_atom_site_displace_xharm.atom_site_label
     _type.purpose                Link
     _type.source                 Related
     _type.container              Single
-    _type.contents               Code
+    _type.contents               Word
 
 save_
 
@@ -2874,7 +2874,7 @@ save_atom_site_occ_Fourier.atom_site_label
     _type.purpose                Link
     _type.source                 Related
     _type.container              Single
-    _type.contents               Code
+    _type.contents               Word
 
 save_
 
@@ -3201,7 +3201,7 @@ save_atom_site_occ_Legendre.atom_site_label
     _type.purpose                Link
     _type.source                 Related
     _type.container              Single
-    _type.contents               Code
+    _type.contents               Word
 
 save_
 
@@ -3380,7 +3380,7 @@ save_atom_site_occ_ortho.atom_site_label
     _type.purpose                Link
     _type.source                 Related
     _type.container              Single
-    _type.contents               Code
+    _type.contents               Word
 
 save_
 
@@ -3583,7 +3583,7 @@ save_atom_site_occ_special_func.atom_site_label
     _type.purpose                Link
     _type.source                 Related
     _type.container              Single
-    _type.contents               Code
+    _type.contents               Word
 
 save_
 
@@ -3761,7 +3761,7 @@ save_atom_site_occ_xharm.atom_site_label
     _type.purpose                Link
     _type.source                 Related
     _type.container              Single
-    _type.contents               Code
+    _type.contents               Word
 
 save_
 
@@ -3932,7 +3932,7 @@ save_atom_site_phason.atom_site_label
     _type.purpose                Link
     _type.source                 Related
     _type.container              Single
-    _type.contents               Code
+    _type.contents               Word
 
 save_
 
@@ -4054,7 +4054,7 @@ save_atom_site_rot_Fourier.atom_site_label
     _type.purpose                Link
     _type.source                 Related
     _type.container              Single
-    _type.contents               Code
+    _type.contents               Word
 
 save_
 
@@ -4447,7 +4447,7 @@ save_atom_site_rot_Legendre.atom_site_label
     _type.purpose                Link
     _type.source                 Related
     _type.container              Single
-    _type.contents               Code
+    _type.contents               Word
 
 save_
 
@@ -4705,7 +4705,7 @@ save_atom_site_rot_ortho.atom_site_label
     _type.purpose                Link
     _type.source                 Related
     _type.container              Single
-    _type.contents               Code
+    _type.contents               Word
 
 save_
 
@@ -4980,7 +4980,7 @@ save_atom_site_rot_special_func.atom_site_label
     _type.purpose                Link
     _type.source                 Related
     _type.container              Single
-    _type.contents               Code
+    _type.contents               Word
 
 save_
 
@@ -5532,7 +5532,7 @@ save_atom_site_rot_xharm.atom_site_label
     _type.purpose                Link
     _type.source                 Related
     _type.container              Single
-    _type.contents               Code
+    _type.contents               Word
 
 save_
 
@@ -5774,7 +5774,7 @@ save_atom_site_U_Fourier.atom_site_label
     _type.purpose                Link
     _type.source                 Related
     _type.container              Single
-    _type.contents               Code
+    _type.contents               Word
 
 save_
 
@@ -6142,7 +6142,7 @@ save_atom_site_U_Legendre.atom_site_label
     _type.purpose                Link
     _type.source                 Related
     _type.container              Single
-    _type.contents               Code
+    _type.contents               Word
 
 save_
 
@@ -6355,7 +6355,7 @@ save_atom_site_u_ortho.atom_site_label
     _type.purpose                Link
     _type.source                 Related
     _type.container              Single
-    _type.contents               Code
+    _type.contents               Word
 
 save_
 
@@ -6563,7 +6563,7 @@ save_atom_site_U_xharm.atom_site_label
     _type.purpose                Link
     _type.source                 Related
     _type.container              Single
-    _type.contents               Code
+    _type.contents               Word
 
 save_
 
