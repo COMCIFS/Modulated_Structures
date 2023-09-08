@@ -12590,7 +12590,6 @@ save_geom_bond.distance_su
 _definition.id                          '_geom_bond.distance_su'
 loop_
   _alias.definition_id
-         '_geom_bond.distance_su'      
          '_geom_bond_distance_su'      
          '_geom_bond.dist_esd' 
 _definition.update                      2012-12-14
@@ -12640,7 +12639,6 @@ save_geom_contact.distance_su
 _definition.id                          '_geom_contact.distance_su'
 loop_
   _alias.definition_id
-         '_geom_contact.distance_su'   
          '_geom_contact_distance_su'   
          '_geom_contact.dist_esd' 
 _definition.update                      2012-12-14
@@ -12697,7 +12695,6 @@ save_geom_torsion.angle_su
 _definition.id                          '_geom_torsion.angle_su'
 loop_
   _alias.definition_id
-         '_geom_torsion.angle_su'      
          '_geom_torsion_su'  
          '_geom_torsion.value_esd' 
 _definition.update                      2012-11-22
