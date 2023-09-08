@@ -24,7 +24,7 @@ data_CIF_MS
     _dictionary.formalism        Modulated
     _dictionary.class            Instance
     _dictionary.version          3.2.1
-    _dictionary.date             2019-09-25
+    _dictionary.date             2023-09-08
     _dictionary.uri              http://www.iucr.org/cif/dic/cif_ms.dic
     _dictionary.ddl_conformance  3.13.1
     _dictionary.namespace        ModStruct
@@ -4094,6 +4094,27 @@ save_atom_site_rot_Fourier.axis
               a1            'rotation around an arbitrary a1 axis'   
               a2            'rotation around an arbitrary a2 axis'   
               a3            'rotation around an arbitrary a3 axis' 
+
+save_
+
+save_atom_site_rot_Fourier.id
+
+    _definition.id                '_atom_site_rot_Fourier.id'
+    loop_
+      _alias.definition_id
+          '_atom_site_rot_Fourier_id'
+    _definition.update            2023-09-08
+    _description.text
+;
+    A code identifying each component of the rotational modulation of a given
+    rigid group when the modulation is expressed in terms of Fourier series.
+;
+    _name.category_id             atom_site_rot_Fourier
+    _name.object_id               id
+    _type.purpose                 Key
+    _type.source                  Assigned
+    _type.container               Single
+    _type.contents                Word
 
 save_
 
@@ -12734,10 +12755,12 @@ loop_
      Returned all additional indices to main dictionary, removed category_id
      from templates(James Hester)
 ;
-         3.2.1    2019-09-25
+         3.2.1    2023-09-08
 ;
      Corrected a typo in the definition of the _geom_torsion.angle data item.
 
      Changed the content type of multiple data items from 'Count' to 'Integer'
      and assigned the appropriate enumeration range if needed.
+
+     Restored the _atom_site_rot_Fourier.id data item.
 ;
