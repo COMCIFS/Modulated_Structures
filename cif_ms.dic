@@ -2096,7 +2096,7 @@ save_atom_site_Fourier_wave_vector.q_coeff
       express a given k as a linear combination of the independent wave vectors 
       given in _cell.modulation_dimension. The enumeration of the independent
       wave vectors (1,2, ...) is given by the value of 
-      _atom_site_Fourier_wave_vector_.q_coeff_seq_id matching the 
+      _atom_site_Fourier_wave_vector.q_coeff_seq_id matching the
       corresponding value of _cell_wave_vector.seq_id 
 ;
     _name.category_id            atom_site_Fourier_wave_vector
