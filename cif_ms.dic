@@ -399,7 +399,7 @@ save_atom_site_displace_Fourier_param.cos
       cosine coefficient (Ac) corresponding to the Fourier term defined
       _atom_site_displace_Fourier.atom_site_label,
       _atom_site_displace_Fourier.axis and
-      _atom_site_displace_Fourier.wave_vector.seq_id. Atomic or rigid-group
+      _atom_site_displace_Fourier.wave_vector_seq_id. Atomic or rigid-group
       displacements must be expressed as fractions of the unit
       cell or in angstroms if the modulations are referred to some
       special axes defined by the items belonging to the ATOM_SITES_AXES 
@@ -1024,7 +1024,7 @@ save_atom_site_displace_ortho.func_id
       structural model to describe the displacive modulation of an atom 
       or rigid group. In the case of a rigid group, it applies only 
       to the translational part of the distortion. This code must match  
-      _atom_sites_ortho_func_id.
+      _atom_sites_ortho.func_id.
 ;
     _name.category_id            atom_site_displace_ortho
     _name.object_id              func_id
@@ -1270,7 +1270,7 @@ save_atom_site_displace_special_func.sawtooth
        internal space. ux, uy and uz must be expressed in relative
        units or in angstroms if the modulations are referred to some
        special axes defined by the items belonging to the ATOM_SITES_AXES 
-       category, through _atom_site_displace_special_funcs.matrix_seq_id.
+       category, through _atom_site_displace_special_func.matrix_seq_id.
 
        The use of this function is restricted to
        one-dimensional modulated structures. For more details, see
@@ -2092,7 +2092,7 @@ save_atom_site_Fourier_wave_vector.q_coeff
       described in a single data block, these wave vectors are
       expressed with respect to the three-dimensional reciprocal
       basis of each subsystem (see _cell_subsystem.matrix_W_*).
-      _atom_site_Fourier_wave_vector.coeff contains the coefficients that 
+      _atom_site_Fourier_wave_vector.q_coeff contains the coefficients that
       express a given k as a linear combination of the independent wave vectors 
       given in _cell_modulation_dimension. The enumeration of the independent 
       wave vectors (1,2, ...) is given by the value of 
@@ -2374,7 +2374,7 @@ save_atom_site_Fourier_wave_vector.q1_coeff
       of the contribution of the first independent wave vector to the above
       linear combination. The enumeration of the involved independent 
       wave vectors (1,2, ...) is given by the value of 
-      _atom_site_Fourier_wave_vecto_.q1_coeff_seq_id matching the 
+      _atom_site_Fourier_wave_vector.q1_coeff_seq_id matching the
       corresponding value of _cell_wave_vector.seq_id.  
 ;
     _name.category_id            atom_site_Fourier_wave_vector
@@ -3041,7 +3041,7 @@ save_atom_site_occ_Fourier_param.modulus
       and the modulus-argument form,
                |P| cos(\2\p k r+\\d),
       where k is the wave vector of the term and r is the atomic
-      average position. _atom_site_occ_Fourier.param_modulus is the
+      average position. _atom_site_occ_Fourier_param.modulus is the
       modulus (|P|) of the complex amplitude corresponding to the
       Fourier term defined by _atom_site_occ_Fourier.atom_site_label
       and _atom_site_occ_Fourier.wave_vector_seq_id.
@@ -3414,7 +3414,7 @@ save_atom_site_occ_ortho.func_id
 
       A code identifying the orthogonalized function used in the 
       structural model to describe the occupational modulation of an atom 
-      or rigid group. This code must match _atom_sites_ortho_func_id.
+      or rigid group. This code must match _atom_sites_ortho.func_id.
 ;
     _name.category_id            atom_site_occ_ortho
     _name.object_id              func_id
@@ -4753,7 +4753,7 @@ save_atom_site_rot_ortho.func_id
       structural model to describe the displacive modulation of an atom 
       or rigid group. In the case of a rigid group, it applies only 
       to the rotational part of the distortion. This code must match  
-      _atom_sites_ortho_func_id.
+      _atom_sites_ortho.func_id.
 ;
     _name.category_id            atom_site_rot_ortho
     _name.object_id              func_id
@@ -7415,7 +7415,7 @@ save_ATOM_SITES_ORTHO
       by a Crenel function (see Petricek et al., 2016). 
       The functions are constructed selecting Fourier harmonics 
       until a desired degree of orthogonality and completeness is 
-      reached (see_atom_site_occ_special_func.crenel_ortho_eps).
+      reached (see _atom_site_occ_special_func.crenel_ortho_eps).
 
       References: Petricek, V., Van Der Lee & Evain, M. (1995).
                   Acta Cryst. A51, 529-535. DOI 10.1107/S0108767395000365
@@ -7443,7 +7443,7 @@ save_atom_sites_ortho.coeff_cos
 
       The cosine component of each of the harmonics chosen for the
       definition an orthogonalized function labeled by 
-      atom_site_ortho.func_id corresponding to the wave 
+      _atom_sites_ortho.func_id corresponding to the wave
       vector given by _atom_sites_ortho.wave_vector_seq_id
 ;
     _name.category_id            atom_sites_ortho
@@ -7463,7 +7463,7 @@ save_atom_sites_ortho.coeff_cos_list
 ;
 
       The list of cosine components of an orthogonalized function 
-      labeled by atom_sites_ortho.func_id corresponding to the wave 
+      labeled by _atom_sites_ortho.func_id corresponding to the wave
       vector list given by _atom_sites_ortho.wave_vector_seq_id_list
 ;
     _name.category_id            atom_sites_ortho
@@ -7486,7 +7486,7 @@ save_atom_sites_ortho.coeff_sin
 
       The sine component of each of the harmonics chosen for the
       definition an orthogonalized function labeled by 
-      atom_sites_ortho.func_id corresponding to the wave 
+      _atom_sites_ortho.func_id corresponding to the wave
       vector given by _atom_sites_ortho.wave_vector_seq_id
 ;
     _name.category_id            atom_sites_ortho
@@ -7507,7 +7507,7 @@ save_atom_sites_ortho.coeff_sin_list
 ;
 
       The list of sine components of an orthogonalized function 
-      labeled by atom_sites_ortho.func_id corresponding to the wave 
+      labeled by _atom_sites_ortho.func_id corresponding to the wave
       vector list given by _atom_sites_ortho.wave_vector_seq_id_list
 ;
     _name.category_id            atom_sites_ortho
@@ -9801,7 +9801,7 @@ save_diffrn_reflns.limit_index_m_max_list
       appearing in _diffrn_refln.index_m_list. The number of ranges must
       match _cell.modulation_dimension. The order of the additional
       indices must be consistent with the codes given in
-      _cell.wave_vector_seq_id.
+      _cell_wave_vector.seq_id.
 ;
     _name.category_id            diffrn_reflns
     _name.object_id              limit_index_m_max_list
@@ -9995,7 +9995,7 @@ save_diffrn_reflns.limit_index_m_min_list
       appearing in _diffrn_refln.index_m_list. The number of ranges must
       match _cell.modulation_dimension. The order of the additional
       indices must be consistent with the codes given in
-      _cell.wave_vector_seq_id.
+      _cell_wave_vector.seq_id.
 ;
     _name.category_id            diffrn_reflns
     _name.object_id              limit_index_m_min_list
@@ -11976,7 +11976,7 @@ save_reflns.limit_index_m_max_list
       appearing in _refln.index_m_*. The number of ranges must match
       _cell_modulation_dimension. The order of the additional indices
       must be consistent with the codes given in
-      _cell.wave_vector_seq_id. These need not be the same as
+      _cell_wave_vector.seq_id. These need not be the same as
       the _reflns.limit_index_m_*.
 ;
     _name.category_id            reflns
@@ -12019,7 +12019,7 @@ save_reflns.limit_index_m_min_list
       appearing in _refln.index_m_*. The number of ranges must match
       _cell_modulation_dimension. The order of the additional indices
       must be consistent with the codes given in
-      _cell.wave_vector_seq_id. These need not be the same as
+      _cell_wave_vector.seq_id. These need not be the same as
       the _reflns.limit_index_m_*.
 ;
     _name.category_id            reflns
