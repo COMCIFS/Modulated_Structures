@@ -2088,13 +2088,13 @@ save_atom_site_Fourier_wave_vector.q_coeff
       with integer coefficients of the independent wave vectors given
       in the _cell_wave_vector. list. Therefore, a generic Fourier wave
       vector is expressed as k=n(1)q(1)+...+n(p)q(p), where p is given
-      by _cell_modulation_dimension. In the case of composites
+      by _cell.modulation_dimension. In the case of composites
       described in a single data block, these wave vectors are
       expressed with respect to the three-dimensional reciprocal
       basis of each subsystem (see _cell_subsystem.matrix_W_*).
       _atom_site_Fourier_wave_vector.q_coeff contains the coefficients that
       express a given k as a linear combination of the independent wave vectors 
-      given in _cell_modulation_dimension. The enumeration of the independent 
+      given in _cell.modulation_dimension. The enumeration of the independent
       wave vectors (1,2, ...) is given by the value of 
       _atom_site_Fourier_wave_vector_.q_coeff_seq_id matching the 
       corresponding value of _cell_wave_vector.seq_id 
@@ -2118,7 +2118,7 @@ save_atom_site_Fourier_wave_vector.q_coeff
 
 #Not meaningful coefficients are removed here
       atom_site_Fourier_wave_vector.q_coeff = 
-                               temp.q_coeff[0:_cell_modulation_dimension-1]
+                               temp.q_coeff[0:_cell.modulation_dimension-1]
 ; 
 save_
 
@@ -2132,7 +2132,7 @@ save_atom_site_Fourier_wave_vector.q_coeff_seq_id
       The list of codes that identifies each independent wave vector
       appearing in the linear combination that expresses a generic 
       Fourier wave vector as k=n(1)q(1)+...+n(p)q(p), where p is given
-      by _cell_modulation_dimension. In the case of composites
+      by _cell.modulation_dimension. In the case of composites
       described in a single data block, these wave vectors are
       expressed with respect to the three-dimensional reciprocal
       basis of each subsystem (see _cell_subsystem.matrix_W_*). 
@@ -2158,7 +2158,7 @@ save_atom_site_Fourier_wave_vector.q_coeff_seq_id
 
 #Not meaningful identifiers are removed here
       atom_site_Fourier_wave_vector.q_coeff_seq_id = 
-                               temp.q_coeff_seq_id[0:_cell_modulation_dimension-1]
+                               temp.q_coeff_seq_id[0:_cell.modulation_dimension-1]
 ; 
 
 save_
@@ -2180,7 +2180,7 @@ save_atom_site_Fourier_wave_vector.x
       with integer coefficients of the independent wave vectors given
       in the _cell_wave_vector_ list. Therefore, a generic Fourier wave
       vector is expressed as k=n(1)q(1)+...+n(p)q(p), where p is given
-      by _cell_modulation_dimension. In the case of composites
+      by _cell.modulation_dimension. In the case of composites
       described in a single data block, these wave vectors are
       expressed with respect to the three-dimensional reciprocal
       basis of each subsystem (see _cell_subsystem.matrix_W_*).
@@ -2219,7 +2219,7 @@ save_atom_site_Fourier_wave_vector.xyz
       with integer coefficients of the independent wave vectors given
       in the _cell_wave_vector. list. Therefore, a generic Fourier wave
       vector is expressed as k=n(1)q(1)+...+n(p)q(p), where p is given
-      by _cell_modulation_dimension. In the case of composites
+      by _cell.modulation_dimension. In the case of composites
       described in a single data block, these wave vectors are
       expressed with respect to the three-dimensional reciprocal
       basis of each subsystem (see _cell_subsystem.matrix_W_*).
@@ -2283,7 +2283,7 @@ save_atom_site_Fourier_wave_vector.y
       with integer coefficients of the independent wave vectors given
       in the _cell_wave_vector_ list. Therefore, a generic Fourier wave
       vector is expressed as k=n(1)q(1)+...+n(p)q(p), where p is given
-      by _cell_modulation_dimension. In the case of composites
+      by _cell.modulation_dimension. In the case of composites
       described in a single data block, these wave vectors are
       expressed with respect to the three-dimensional reciprocal
       basis of each subsystem (see _cell_subsystem.matrix_W_*).
@@ -2326,7 +2326,7 @@ save_atom_site_Fourier_wave_vector.z
       with integer coefficients of the independent wave vectors given
       in the _cell_wave_vector_ list. Therefore, a generic Fourier wave
       vector is expressed as k=n(1)q(1)+...+n(p)q(p), where p is given
-      by _cell_modulation_dimension. In the case of composites
+      by _cell.modulation_dimension. In the case of composites
       described in a single data block, these wave vectors are
       expressed with respect to the three-dimensional reciprocal
       basis of each subsystem (see _cell_subsystem.matrix_W_*).
@@ -2366,7 +2366,7 @@ save_atom_site_Fourier_wave_vector.q1_coeff
       with integer coefficients of the independent wave vectors given
       in the _cell_wave_vector. list. Therefore, a generic Fourier wave
       vector is expressed as k=n(1)q(1)+...+n(p)q(p), where p is given
-      by _cell_modulation_dimension. In the case of composites
+      by _cell.modulation_dimension. In the case of composites
       described in a single data block, these wave vectors are
       expressed with respect to the three-dimensional reciprocal
       basis of each subsystem (see _cell_subsystem.matrix_W_*).
@@ -2405,7 +2405,7 @@ save_atom_site_Fourier_wave_vector.q1_coeff_seq_id
       A code identifying the first independent wave vector, q(1), in 
       the linear combination that expresses a generic Fourier wave
       vector as k=n(1)q(1)+...+n(p)q(p), where p is given by
-      _cell_modulation_dimension. It must match a code given in
+      _cell.modulation_dimension. It must match a code given in
       _cell_wave_vector.seq_id.
 ;
     _name.category_id            atom_site_Fourier_wave_vector
@@ -4191,7 +4191,7 @@ save_atom_site_rot_Fourier_param.cos
       and the modulus-argument form,
                |R| cos(2\\p k r+\\y),
       where k is the wave vector of the term and r is the atomic
-      average position. _atom_site_rot_Fourier_param_cos is the cosine
+      average position. _atom_site_rot_Fourier_param.cos is the cosine
       coefficient (Rc) in degrees corresponding to the Fourier term
       defined by 
       _atom_site_rot_Fourier.atom_site_label,
@@ -7823,7 +7823,7 @@ save_cell_subsystem.matrix_W
       defined in van Smaalen (1991);  [see also van Smaalen (1995) or 
       van Smaalen (2012)].
       Its dimension must match
-      (_cell_modulation_dimension+3)*(_cell_modulation_dimension+3).
+      (_cell.modulation_dimension+3)*(_cell.modulation_dimension+3).
 
       Intergrowth compounds are composed of several periodic
       substructures in which the reciprocal lattices of two different
@@ -7872,7 +7872,7 @@ save_cell_subsystem.matrix_W
       *_subsystem_code pointers, the cell parameters, the superspace
       group and the measured modulation wave vectors (see
       CELL_WAVE_VECTOR below) correspond to the reciprocal basis
-      described in _cell_reciprocal_basis_description and coincide
+      described in _cell.reciprocal_basis_description and coincide
       with the reciprocal basis of the specific subsystem (if any)
       whose W matrix is the unit matrix. The cell parameters and the
       symmetry of the remaining subsystems can be derived using the
@@ -9284,7 +9284,7 @@ save_cell_wave_vector.xyz
       the case of composites, the modulation wave vectors of each
       subsystem are expressed in terms of the reciprocal basis of its
       corresponding reference structure. Their number must match
-      _cell_modulation_dimension. In the case of composites described
+      _cell.modulation_dimension. In the case of composites described
       in a single data block, the wave
       vectors are expressed in the three-dimensional basis chosen as
       reference in _cell.reciprocal_basis_description, which would
@@ -9596,7 +9596,7 @@ save_diffrn_refln.index_m_list
 
       Additional Miller indices needed to write the reciprocal vector
       of a certain reflection in the basis described in
-      _cell_reciprocal_basis_description. Following the usual
+      _cell.reciprocal_basis_description. Following the usual
       convention, such a vector would be expressed as
 
                H=h*a*+k*b*+l*c*+m1*q(1)+...+m8*q(8),
@@ -10463,7 +10463,7 @@ save_exptl_crystal_face.index_m_list
 ;
 
       Additional Miller indices of the crystal face associated with the
-      value _exptl_crystal_face_perp_dist when the face is indexed
+      value _exptl_crystal_face.perp_dist when the face is indexed
       using a multidimensional scheme. The total number of indices must
       match (_cell.modulation_dimension + 3). The order of the indices
       must be consistent with the codes given in
@@ -10999,13 +10999,13 @@ save_geom_angle.site_ssg_symmetry_1
       n_m1...mp. The character string n_m1...mp is composed as follows:
       'n' refers to the symmetry operation that is applied to the
       superspace coordinates. It must match a number given in
-      _space_group_symop_ssg_id. 'm1...mp' refer to the translations
+      _space_group_symop.ssg_id. 'm1...mp' refer to the translations
       that are subsequently applied to the symmetry-transformed
       coordinates to generate the atom used in calculating the angle.
       These translations (t1,...tp) are related to (m1...mp) by the
       relations m1=5+t1, ..., mp=5+tp. By adding 5 to the translations,
       the use of negative numbers is avoided. The number 'p' must agree
-      with (_cell_modulation_dimension + 3). If there are no cell
+      with (_cell.modulation_dimension + 3). If there are no cell
       translations, the translation number may be omitted. If no
       symmetry operations or translations are applicable, then a single
       full stop '.' is used.
@@ -11181,13 +11181,13 @@ save_geom_bond.site_ssg_symmetry_1
       n_m1...mp. The character string n_m1...mp is composed as follows:
       'n' refers to the symmetry operation that is applied to the
       superspace coordinates. It must match a number given in
-      _space_group_symop_ssg_id. 'm1...mp' refer to the translations
+      _space_group_symop.ssg_id. 'm1...mp' refer to the translations
       that are subsequently applied to the symmetry-transformed
       coordinates to generate the atom used in calculating the bond.
       These translations (t1,...tp) are related to (m1...mp) by the
       relations m1=5+t1, ..., mp=5+tp. By adding 5 to the translations,
       the use of negative numbers is avoided. The number 'p' must agree
-      with (_cell_modulation_dimension + 3). If there are no cell
+      with (_cell.modulation_dimension + 3). If there are no cell
       translations, the translation number may be omitted. If no
       symmetry operations or translations are applicable then a single
       full stop '.' is used.
@@ -11335,13 +11335,13 @@ save_geom_contact.site_ssg_symmetry_1
       n_m1...mp. The character string n_m1...mp is composed as follows:
       'n' refers to the symmetry operation that is applied to the
       superspace coordinates. It must match a number given in
-      _space_group_symop_ssg_id. 'm1...mp' refer to the translations
+      _space_group_symop.ssg_id. 'm1...mp' refer to the translations
       that are subsequently applied to the symmetry-transformed
       coordinates to generate the atom used in calculating the contact.
       These translations (t1,...tp) are related to (m1...mp) by the
       relations m1=5+t1, ..., mp=5+tp. By adding 5 to the translations,
       the use of negative numbers is avoided. The number 'p' must agree
-      with (_cell_modulation_dimension + 3). If there are no cell
+      with (_cell.modulation_dimension + 3). If there are no cell
       translations, the translation number may be omitted. If no
       symmetry operations or translations are applicable, then a single
       full stop '.' is used.
@@ -11499,13 +11499,13 @@ save_geom_torsion.site_ssg_symmetry_1
       n_m1...mp. The character string n_m1...mp is composed as follows:
       'n' refers to the symmetry operation that is applied to the
       superspace coordinates. It must match a number given in
-      _space_group_symop_ssg_id. 'm1...mp' refer to the translations
+      _space_group_symop.ssg_id. 'm1...mp' refer to the translations
       that are subsequently applied to the symmetry-transformed
       coordinates to generate the atom used in calculating the angle.
       These translations (t1,...tp) are related to (m1...mp) by the
       relations m1=5+t1, ..., mp=5+tp. By adding 5 to the
       translations, the use of negative numbers is avoided. The number
-      'p' must agree with (_cell_modulation_dimension + 3). If there
+      'p' must agree with (_cell.modulation_dimension + 3). If there
       are no cell translations, the translation number may be omitted.
       If no symmetry operations or translations are applicable,
       then a single full stop '.' is used.
@@ -11759,7 +11759,7 @@ save_refln.index_m_list
 ;
 
       Additional Miller indices of a particular reflection in the basis
-      described in _cell_reciprocal_basis_description. The total number
+      described in _cell.reciprocal_basis_description. The total number
       of indices must match (_cell.modulation_dimension + 3). The
       order of the additional indices must be consistent with the codes
       given in _cell_wave_vector.seq_id.
@@ -11974,7 +11974,7 @@ save_reflns.limit_index_m_max_list
 
       Maximum of the additional Miller indices
       appearing in _refln.index_m_*. The number of ranges must match
-      _cell_modulation_dimension. The order of the additional indices
+      _cell.modulation_dimension. The order of the additional indices
       must be consistent with the codes given in
       _cell_wave_vector.seq_id. These need not be the same as
       the _reflns.limit_index_m_*.
@@ -12017,7 +12017,7 @@ save_reflns.limit_index_m_min_list
 
       Minimum values of the additional Miller indices
       appearing in _refln.index_m_*. The number of ranges must match
-      _cell_modulation_dimension. The order of the additional indices
+      _cell.modulation_dimension. The order of the additional indices
       must be consistent with the codes given in
       _cell_wave_vector.seq_id. These need not be the same as
       the _reflns.limit_index_m_*.
@@ -12396,8 +12396,8 @@ save_space_group.ssg_name
 ;
 
       Superspace-group symbol conforming to an alternative definition
-      from that given in _space_group_ssg_name_IT and
-      _space_group_ssg_name_WJJ for one-dimensional modulated
+      from that given in _space_group.ssg_name_IT and
+      _space_group.ssg_name_WJJ for one-dimensional modulated
       structures or to the superspace-group name for higher dimensions.
       When necessary, indicate the origin and the setting. Use a colon
       ':' as a separator between the different parts of the
@@ -12405,7 +12405,7 @@ save_space_group.ssg_name
       between each component. Rules for the notation for
       Hermann-Mauguin and Hall symbols (if present) are given in the
       symmetry CIF dictionary (cif_sym.dic) and, partially, in
-      _space_group_ssg_name_IT and _space_group_ssg_name_WJJ.
+      _space_group.ssg_name_IT and _space_group.ssg_name_WJJ.
       For composites described in a single data block, the superspace
       group describes the symmetry of the whole structure. The
       symmetry of each subsystem can be derived using the
@@ -12573,7 +12573,7 @@ save_space_group_symop.ssg_id
 ;
 
       A numeric code identifying each entry in the
-      _space_group_symop_ssg_operation_algebraic list.
+      _space_group_symop.ssg_operation_algebraic list.
 ;
     _name.category_id            space_group_symop
     _name.object_id              ssg_id
@@ -12598,14 +12598,14 @@ save_space_group_symop.ssg_operation_algebraic
       A parsable string giving one of the symmetry operations of the
       superspace group in algebraic form. These data will generally be
       repeated in a loop. Use symbols as necessary according to
-      _cell_modulation_dimension.
+      _cell.modulation_dimension.
       All symmetry operations should be entered, including the
       identity operation, those for lattice centring and that for
       a centre of symmetry, if present. The symbolic notation for
       coordinates is such that the identity operation is expressed
       as x1,x2,x3,...,xn.
 
-      _space_group_symop_ssg_operation_algebraic must always be present
+      _space_group_symop.ssg_operation_algebraic must always be present
       in a CIF corresponding to a modulated structure.
 ;
     _name.category_id            space_group_symop
