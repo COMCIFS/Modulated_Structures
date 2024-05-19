@@ -24,7 +24,7 @@ data_CIF_MS
     _dictionary.formalism        Modulated
     _dictionary.class            Instance
     _dictionary.version          3.2.1
-    _dictionary.date             2023-09-08
+    _dictionary.date             2024-05-19
     _dictionary.uri              http://www.iucr.org/cif/dic/cif_ms.dic
     _dictionary.ddl_conformance  3.13.1
     _dictionary.namespace        ModStruct
@@ -41,7 +41,7 @@ save_MS_GROUP
     _definition.id               MS_GROUP
     _definition.scope            Category
     _definition.class            Head
-    _definition.update           2012-11-20
+    _definition.update           2024-05-15
     _description.text                   
 ;
 
@@ -49,7 +49,10 @@ save_MS_GROUP
 ;
     _name.category_id            CIF_MS
     _name.object_id              MS_GROUP
-    _import.get                  [{"file":"cif_core.dic" "save":"CIF_CORE" "mode":"Full" "dupl":"Ignore"}]
+    _import.get
+        [
+         {'dupl':Ignore  'file':cif_core.dic  'mode':Full  'save':CIF_CORE_HEAD}
+        ]
 
 save_
 
@@ -4103,7 +4106,7 @@ save_atom_site_rot_Fourier.id
     loop_
       _alias.definition_id
           '_atom_site_rot_Fourier_id'
-    _definition.update            2023-09-08
+    _definition.update            2024-05-19
     _description.text
 ;
     A code identifying each component of the rotational modulation of a given
@@ -7963,6 +7966,7 @@ save_cell_subsystem.matrix_W_1_1
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_1_1'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_1_1
      save_
  
@@ -7972,6 +7976,7 @@ save_cell_subsystem.matrix_W_1_2
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_1_2'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_1_2
      save_
  
@@ -7981,6 +7986,7 @@ save_cell_subsystem.matrix_W_1_3
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_1_3'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_1_3
      save_
  
@@ -7990,6 +7996,7 @@ save_cell_subsystem.matrix_W_1_4
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_1_4'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_1_4
      save_
  
@@ -7999,6 +8006,7 @@ save_cell_subsystem.matrix_W_1_5
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_1_5'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_1_5
      save_
  
@@ -8008,6 +8016,7 @@ save_cell_subsystem.matrix_W_1_6
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_1_6'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_1_6
      save_
  
@@ -8017,6 +8026,7 @@ save_cell_subsystem.matrix_W_1_7
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_1_7'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_1_7
      save_
  
@@ -8026,6 +8036,7 @@ save_cell_subsystem.matrix_W_1_8
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_1_8'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_1_8
      save_
  
@@ -8035,6 +8046,7 @@ save_cell_subsystem.matrix_W_1_9
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_1_9'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_1_9
      save_
  
@@ -8044,6 +8056,7 @@ save_cell_subsystem.matrix_W_1_10
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_1_10'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_1_10
      save_
  
@@ -8053,6 +8066,7 @@ save_cell_subsystem.matrix_W_1_11
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_1_11'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_1_11
      save_
 
@@ -8062,6 +8076,7 @@ save_cell_subsystem.matrix_W_2_1
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_2_1'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_2_1
      save_
  
@@ -8071,6 +8086,7 @@ save_cell_subsystem.matrix_W_2_2
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_2_2'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_2_2
      save_
  
@@ -8080,6 +8096,7 @@ save_cell_subsystem.matrix_W_2_3
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_2_3'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_2_3
      save_
  
@@ -8089,6 +8106,7 @@ save_cell_subsystem.matrix_W_2_4
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_2_4'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_2_4
      save_
  
@@ -8098,6 +8116,7 @@ save_cell_subsystem.matrix_W_2_5
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_2_5'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_2_5
      save_
  
@@ -8107,6 +8126,7 @@ save_cell_subsystem.matrix_W_2_6
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_2_6'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_2_6
      save_
  
@@ -8116,6 +8136,7 @@ save_cell_subsystem.matrix_W_2_7
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_2_7'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_2_7
      save_
  
@@ -8125,6 +8146,7 @@ save_cell_subsystem.matrix_W_2_8
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_2_8'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_2_8
      save_
  
@@ -8134,6 +8156,7 @@ save_cell_subsystem.matrix_W_2_9
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_2_9'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_2_9
      save_
  
@@ -8143,6 +8166,7 @@ save_cell_subsystem.matrix_W_2_10
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_2_10'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_2_10
      save_
  
@@ -8152,6 +8176,7 @@ save_cell_subsystem.matrix_W_2_11
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_2_11'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_2_11
      save_
 
@@ -8161,6 +8186,7 @@ save_cell_subsystem.matrix_W_3_1
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_3_1'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_3_1
      save_
  
@@ -8170,6 +8196,7 @@ save_cell_subsystem.matrix_W_3_2
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_3_2'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_3_2
      save_
  
@@ -8179,6 +8206,7 @@ save_cell_subsystem.matrix_W_3_3
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_3_3'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_3_3
      save_
  
@@ -8188,6 +8216,7 @@ save_cell_subsystem.matrix_W_3_4
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_3_4'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_3_4
      save_
  
@@ -8197,6 +8226,7 @@ save_cell_subsystem.matrix_W_3_5
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_3_5'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_3_5
      save_
  
@@ -8206,6 +8236,7 @@ save_cell_subsystem.matrix_W_3_6
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_3_6'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_3_6
      save_
  
@@ -8215,6 +8246,7 @@ save_cell_subsystem.matrix_W_3_7
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_3_7'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_3_7
      save_
  
@@ -8224,6 +8256,7 @@ save_cell_subsystem.matrix_W_3_8
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_3_8'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_3_8
      save_
  
@@ -8233,6 +8266,7 @@ save_cell_subsystem.matrix_W_3_9
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_3_9'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_3_9
      save_
  
@@ -8242,6 +8276,7 @@ save_cell_subsystem.matrix_W_3_10
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_3_10'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_3_10
      save_
  
@@ -8251,6 +8286,7 @@ save_cell_subsystem.matrix_W_3_11
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_3_11'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_3_11
      save_
 
@@ -8260,6 +8296,7 @@ save_cell_subsystem.matrix_W_4_1
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_4_1'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_4_1
      save_
  
@@ -8269,6 +8306,7 @@ save_cell_subsystem.matrix_W_4_2
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_4_2'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_4_2
      save_
  
@@ -8278,6 +8316,7 @@ save_cell_subsystem.matrix_W_4_3
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_4_3'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_4_3
      save_
  
@@ -8287,6 +8326,7 @@ save_cell_subsystem.matrix_W_4_4
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_4_4'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_4_4
      save_
  
@@ -8296,6 +8336,7 @@ save_cell_subsystem.matrix_W_4_5
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_4_5'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_4_5
      save_
  
@@ -8305,6 +8346,7 @@ save_cell_subsystem.matrix_W_4_6
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_4_6'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_4_6
      save_
  
@@ -8314,6 +8356,7 @@ save_cell_subsystem.matrix_W_4_7
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_4_7'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_4_7
      save_
  
@@ -8323,6 +8366,7 @@ save_cell_subsystem.matrix_W_4_8
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_4_8'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_4_8
      save_
  
@@ -8332,6 +8376,7 @@ save_cell_subsystem.matrix_W_4_9
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_4_9'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_4_9
      save_
  
@@ -8341,6 +8386,7 @@ save_cell_subsystem.matrix_W_4_10
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_4_10'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_4_10
      save_
  
@@ -8350,6 +8396,7 @@ save_cell_subsystem.matrix_W_4_11
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_4_11'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_4_11
      save_
 
@@ -8359,6 +8406,7 @@ save_cell_subsystem.matrix_W_5_1
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_5_1'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_5_1
      save_
  
@@ -8368,6 +8416,7 @@ save_cell_subsystem.matrix_W_5_2
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_5_2'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_5_2
      save_
  
@@ -8377,6 +8426,7 @@ save_cell_subsystem.matrix_W_5_3
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_5_3'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_5_3
      save_
  
@@ -8386,6 +8436,7 @@ save_cell_subsystem.matrix_W_5_4
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_5_4'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_5_4
      save_
  
@@ -8395,6 +8446,7 @@ save_cell_subsystem.matrix_W_5_5
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_5_5'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_5_5
      save_
  
@@ -8404,6 +8456,7 @@ save_cell_subsystem.matrix_W_5_6
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_5_6'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_5_6
      save_
  
@@ -8413,6 +8466,7 @@ save_cell_subsystem.matrix_W_5_7
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_5_7'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_5_7
      save_
  
@@ -8422,6 +8476,7 @@ save_cell_subsystem.matrix_W_5_8
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_5_8'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_5_8
      save_
  
@@ -8431,6 +8486,7 @@ save_cell_subsystem.matrix_W_5_9
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_5_9'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_5_9
      save_
  
@@ -8440,6 +8496,7 @@ save_cell_subsystem.matrix_W_5_10
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_5_10'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_5_10
      save_
  
@@ -8449,6 +8506,7 @@ save_cell_subsystem.matrix_W_5_11
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_5_11'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_5_11
      save_
 
@@ -8458,6 +8516,7 @@ save_cell_subsystem.matrix_W_6_1
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_6_1'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_6_1
      save_
  
@@ -8467,6 +8526,7 @@ save_cell_subsystem.matrix_W_6_2
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_6_2'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_6_2
      save_
  
@@ -8476,6 +8536,7 @@ save_cell_subsystem.matrix_W_6_3
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_6_3'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_6_3
      save_
  
@@ -8485,6 +8546,7 @@ save_cell_subsystem.matrix_W_6_4
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_6_4'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_6_4
      save_
  
@@ -8494,6 +8556,7 @@ save_cell_subsystem.matrix_W_6_5
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_6_5'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_6_5
      save_
  
@@ -8503,6 +8566,7 @@ save_cell_subsystem.matrix_W_6_6
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_6_6'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_6_6
      save_
  
@@ -8512,6 +8576,7 @@ save_cell_subsystem.matrix_W_6_7
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_6_7'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_6_7
      save_
  
@@ -8521,6 +8586,7 @@ save_cell_subsystem.matrix_W_6_8
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_6_8'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_6_8
      save_
  
@@ -8530,6 +8596,7 @@ save_cell_subsystem.matrix_W_6_9
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_6_9'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_6_9
      save_
  
@@ -8539,6 +8606,7 @@ save_cell_subsystem.matrix_W_6_10
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_6_10'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_6_10
      save_
  
@@ -8548,6 +8616,7 @@ save_cell_subsystem.matrix_W_6_11
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_6_11'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_6_11
      save_
 
@@ -8557,6 +8626,7 @@ save_cell_subsystem.matrix_W_7_1
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_7_1'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_7_1
      save_
  
@@ -8566,6 +8636,7 @@ save_cell_subsystem.matrix_W_7_2
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_7_2'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_7_2
      save_
  
@@ -8575,6 +8646,7 @@ save_cell_subsystem.matrix_W_7_3
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_7_3'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_7_3
      save_
  
@@ -8584,6 +8656,7 @@ save_cell_subsystem.matrix_W_7_4
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_7_4'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_7_4
      save_
  
@@ -8593,6 +8666,7 @@ save_cell_subsystem.matrix_W_7_5
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_7_5'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_7_5
      save_
  
@@ -8602,6 +8676,7 @@ save_cell_subsystem.matrix_W_7_6
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_7_6'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_7_6
      save_
  
@@ -8611,6 +8686,7 @@ save_cell_subsystem.matrix_W_7_7
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_7_7'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_7_7
      save_
  
@@ -8620,6 +8696,7 @@ save_cell_subsystem.matrix_W_7_8
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_7_8'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_7_8
      save_
  
@@ -8629,6 +8706,7 @@ save_cell_subsystem.matrix_W_7_9
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_7_9'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_7_9
      save_
  
@@ -8638,6 +8716,7 @@ save_cell_subsystem.matrix_W_7_10
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_7_10'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_7_10
      save_
  
@@ -8647,6 +8726,7 @@ save_cell_subsystem.matrix_W_7_11
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_7_11'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_7_11
      save_
 
@@ -8656,6 +8736,7 @@ save_cell_subsystem.matrix_W_8_1
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_8_1'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_8_1
      save_
  
@@ -8665,6 +8746,7 @@ save_cell_subsystem.matrix_W_8_2
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_8_2'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_8_2
      save_
  
@@ -8674,6 +8756,7 @@ save_cell_subsystem.matrix_W_8_3
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_8_3'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_8_3
      save_
  
@@ -8683,6 +8766,7 @@ save_cell_subsystem.matrix_W_8_4
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_8_4'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_8_4
      save_
  
@@ -8692,6 +8776,7 @@ save_cell_subsystem.matrix_W_8_5
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_8_5'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_8_5
      save_
  
@@ -8701,6 +8786,7 @@ save_cell_subsystem.matrix_W_8_6
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_8_6'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_8_6
      save_
  
@@ -8710,6 +8796,7 @@ save_cell_subsystem.matrix_W_8_7
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_8_7'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_8_7
      save_
  
@@ -8719,6 +8806,7 @@ save_cell_subsystem.matrix_W_8_8
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_8_8'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_8_8
      save_
  
@@ -8728,6 +8816,7 @@ save_cell_subsystem.matrix_W_8_9
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_8_9'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_8_9
      save_
  
@@ -8737,6 +8826,7 @@ save_cell_subsystem.matrix_W_8_10
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_8_10'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_8_10
      save_
  
@@ -8746,6 +8836,7 @@ save_cell_subsystem.matrix_W_8_11
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_8_11'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_8_11
      save_
 
@@ -8755,6 +8846,7 @@ save_cell_subsystem.matrix_W_9_1
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_9_1'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_9_1
      save_
  
@@ -8764,6 +8856,7 @@ save_cell_subsystem.matrix_W_9_2
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_9_2'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_9_2
      save_
  
@@ -8773,6 +8866,7 @@ save_cell_subsystem.matrix_W_9_3
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_9_3'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_9_3
      save_
  
@@ -8782,6 +8876,7 @@ save_cell_subsystem.matrix_W_9_4
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_9_4'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_9_4
      save_
  
@@ -8791,6 +8886,7 @@ save_cell_subsystem.matrix_W_9_5
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_9_5'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_9_5
      save_
  
@@ -8800,6 +8896,7 @@ save_cell_subsystem.matrix_W_9_6
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_9_6'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_9_6
      save_
  
@@ -8809,6 +8906,7 @@ save_cell_subsystem.matrix_W_9_7
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_9_7'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_9_7
      save_
  
@@ -8818,6 +8916,7 @@ save_cell_subsystem.matrix_W_9_8
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_9_8'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_9_8
      save_
  
@@ -8827,6 +8926,7 @@ save_cell_subsystem.matrix_W_9_9
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_9_9'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_9_9
      save_
  
@@ -8836,6 +8936,7 @@ save_cell_subsystem.matrix_W_9_10
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_9_10'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_9_10
      save_
  
@@ -8845,6 +8946,7 @@ save_cell_subsystem.matrix_W_9_11
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_9_11'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_9_11
      save_
 
@@ -8854,6 +8956,7 @@ save_cell_subsystem.matrix_W_10_1
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_10_1'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_10_1
      save_
  
@@ -8863,6 +8966,7 @@ save_cell_subsystem.matrix_W_10_2
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_10_2'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_10_2
      save_
  
@@ -8872,6 +8976,7 @@ save_cell_subsystem.matrix_W_10_3
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_10_3'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_10_3
      save_
  
@@ -8881,6 +8986,7 @@ save_cell_subsystem.matrix_W_10_4
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_10_4'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_10_4
      save_
  
@@ -8890,6 +8996,7 @@ save_cell_subsystem.matrix_W_10_5
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_10_5'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_10_5
      save_
  
@@ -8899,6 +9006,7 @@ save_cell_subsystem.matrix_W_10_6
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_10_6'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_10_6
      save_
  
@@ -8908,6 +9016,7 @@ save_cell_subsystem.matrix_W_10_7
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_10_7'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_10_7
      save_
  
@@ -8917,6 +9026,7 @@ save_cell_subsystem.matrix_W_10_8
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_10_8'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_10_8
      save_
  
@@ -8926,6 +9036,7 @@ save_cell_subsystem.matrix_W_10_9
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_10_9'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_10_9
      save_
  
@@ -8935,6 +9046,7 @@ save_cell_subsystem.matrix_W_10_10
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_10_10'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_10_10
      save_
  
@@ -8944,6 +9056,7 @@ save_cell_subsystem.matrix_W_10_11
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_10_11'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_10_11
      save_
 
@@ -8953,6 +9066,7 @@ save_cell_subsystem.matrix_W_11_1
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_11_1'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_11_1
      save_
  
@@ -8962,6 +9076,7 @@ save_cell_subsystem.matrix_W_11_2
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_11_2'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_11_2
      save_
  
@@ -8971,6 +9086,7 @@ save_cell_subsystem.matrix_W_11_3
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_11_3'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_11_3
      save_
  
@@ -8980,6 +9096,7 @@ save_cell_subsystem.matrix_W_11_4
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_11_4'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_11_4
      save_
  
@@ -8989,6 +9106,7 @@ save_cell_subsystem.matrix_W_11_5
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_11_5'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_11_5
      save_
  
@@ -8998,6 +9116,7 @@ save_cell_subsystem.matrix_W_11_6
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_11_6'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_11_6
      save_
  
@@ -9007,6 +9126,7 @@ save_cell_subsystem.matrix_W_11_7
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_11_7'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_11_7
      save_
  
@@ -9016,6 +9136,7 @@ save_cell_subsystem.matrix_W_11_8
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_11_8'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_11_8
      save_
  
@@ -9025,6 +9146,7 @@ save_cell_subsystem.matrix_W_11_9
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_11_9'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_11_9
      save_
  
@@ -9034,6 +9156,7 @@ save_cell_subsystem.matrix_W_11_10
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_11_10'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_11_10
      save_
  
@@ -9043,6 +9166,7 @@ save_cell_subsystem.matrix_W_11_11
      loop_
     _alias.definition_id       '_cell_subsystem_matrix_W_11_11'
     _import.get        [{"file":'templ_attr.cif' "save":'matrix_w'}]
+    _name.category_id           cell_subsystem
     _name.object_id             matrix_W_11_11
 save_
 
@@ -12755,12 +12879,15 @@ loop_
      Returned all additional indices to main dictionary, removed category_id
      from templates(James Hester)
 ;
-         3.2.1    2023-09-08
+         3.2.1    2024-05-19
 ;
      Corrected a typo in the definition of the _geom_torsion.angle data item.
 
      Changed the content type of multiple data items from 'Count' to 'Integer'
      and assigned the appropriate enumeration range if needed.
+
+     Updated the CIF_CORE dictionary import statement with the new Head
+     category name.
 
      Restored the _atom_site_rot_Fourier.id data item.
 ;
