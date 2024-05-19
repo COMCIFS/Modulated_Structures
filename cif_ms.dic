@@ -24,7 +24,7 @@ data_CIF_MS
     _dictionary.formalism        Modulated
     _dictionary.class            Instance
     _dictionary.version          3.2.1
-    _dictionary.date             2024-02-15
+    _dictionary.date             2024-05-19
     _dictionary.uri              http://www.iucr.org/cif/dic/cif_ms.dic
     _dictionary.ddl_conformance  3.13.1
     _dictionary.namespace        ModStruct
@@ -41,7 +41,7 @@ save_MS_GROUP
     _definition.id               MS_GROUP
     _definition.scope            Category
     _definition.class            Head
-    _definition.update           2012-11-20
+    _definition.update           2024-05-15
     _description.text                   
 ;
 
@@ -49,7 +49,10 @@ save_MS_GROUP
 ;
     _name.category_id            CIF_MS
     _name.object_id              MS_GROUP
-    _import.get                  [{"file":"cif_core.dic" "save":"CIF_CORE" "mode":"Full" "dupl":"Ignore"}]
+    _import.get
+        [
+         {'dupl':Ignore  'file':cif_core.dic  'mode':Full  'save':CIF_CORE_HEAD}
+        ]
 
 save_
 
@@ -323,7 +326,7 @@ save_
 save_atom_site_displace_Fourier.wave_vector_seq_id
 
     _definition.id               '_atom_site_displace_Fourier.wave_vector_seq_id'
-    _definition.update           2024-02-15
+    _definition.update           2024-05-19
     loop_
       _alias.definition_id
           '_atom_site_displace_Fourier_wave_vector_seq_id' 
@@ -2054,7 +2057,7 @@ save_
 save_atom_site_Fourier_wave_vector.seq_id
 
     _definition.id               '_atom_site_Fourier_wave_vector.seq_id'
-    _definition.update           2024-02-15
+    _definition.update           2024-05-19
     loop_
       _alias.definition_id
           '_atom_site_Fourier_wave_vector_seq_id'
@@ -2907,7 +2910,7 @@ save_
 save_atom_site_occ_Fourier.wave_vector_seq_id
 
     _definition.id               '_atom_site_occ_Fourier.wave_vector_seq_id'
-    _definition.update           2024-02-15
+    _definition.update           2024-05-19
     loop_
       _alias.definition_id
           '_atom_site_occ_Fourier_wave_vector_seq_id' 
@@ -4122,7 +4125,7 @@ save_
 save_atom_site_rot_Fourier.wave_vector_seq_id
 
     _definition.id               '_atom_site_rot_Fourier.wave_vector_seq_id'
-    _definition.update           2024-02-15
+    _definition.update           2024-05-19
     loop_
       _alias.definition_id
           '_atom_site_rot_Fourier_wave_vector_seq_id' 
@@ -5840,7 +5843,7 @@ save_
 save_atom_site_U_Fourier.wave_vector_seq_id
 
     _definition.id               '_atom_site_U_Fourier.wave_vector_seq_id'
-    _definition.update           2024-02-15
+    _definition.update           2024-05-19
     loop_
       _alias.definition_id
           '_atom_site_U_Fourier_wave_vector_seq_id' 
@@ -7547,7 +7550,7 @@ save_
 save_atom_sites_ortho.wave_vector_seq_id
 
     _definition.id               '_atom_sites_ortho.wave_vector_seq_id'
-    _definition.update           2024-02-15
+    _definition.update           2024-05-19
     _description.text                   
 ;
 
@@ -7570,7 +7573,7 @@ save_
 save_atom_sites_ortho.wave_vector_seq_id_list
 
     _definition.id               '_atom_sites_ortho.wave_vector_seq_id_list'
-    _definition.update           2024-02-15
+    _definition.update           2024-05-19
     _description.text                   
 ;
 
@@ -12859,12 +12862,15 @@ loop_
      Returned all additional indices to main dictionary, removed category_id
      from templates(James Hester)
 ;
-         3.2.1    2024-02-15
+         3.2.1    2024-05-19
 ;
      Corrected a typo in the definition of the _geom_torsion.angle data item.
 
      Changed the content type of multiple data items from 'Count' to 'Integer'
      and assigned the appropriate enumeration range if needed.
+
+     Updated the CIF_CORE dictionary import statement with the new Head
+     category name.
 
      Restricted the values of _atom_site_Fourier_wave_vector.seq_id and linked
      data items to positive integers.
