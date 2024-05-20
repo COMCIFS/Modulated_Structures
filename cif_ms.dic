@@ -24,31 +24,31 @@ data_CIF_MS
     _dictionary.formalism        Modulated
     _dictionary.class            Instance
     _dictionary.version          3.2.1
-    _dictionary.date             2024-05-19
+    _dictionary.date             2024-05-20
     _dictionary.uri              http://www.iucr.org/cif/dic/cif_ms.dic
     _dictionary.ddl_conformance  3.13.1
     _dictionary.namespace        ModStruct
     _description.text                   
 ;
-
     The DICTIONARY group encompassing the definitions of data items
     for the study of modulated structures with the Crystallographic 
     Information Framework (CIF).
 ;
 
-save_MS_GROUP
+save_CIF_MS_HEAD
 
-    _definition.id               MS_GROUP
+    _definition.id               CIF_MS_HEAD
     _definition.scope            Category
     _definition.class            Head
-    _definition.update           2024-05-15
+    _definition.update           2024-05-17
     _description.text                   
 ;
-
-    Encompasses groups of categories applicable to modulated structures.
+    The CIF_MS_HEAD category is the top-level category for all categories
+    in the CIF_MS dictionary. Head categories from other dictionaries are
+    reparented to this category.
 ;
     _name.category_id            CIF_MS
-    _name.object_id              MS_GROUP
+    _name.object_id              CIF_MS_HEAD
     _import.get
         [
          {'dupl':Ignore  'file':cif_core.dic  'mode':Full  'save':CIF_CORE_HEAD}
@@ -181,7 +181,7 @@ save_ATOM_SITE_DISPLACE_FOURIER
     _definition.id               ATOM_SITE_DISPLACE_FOURIER
     _definition.scope            Category
     _definition.class            Loop
-    _definition.update           2014-06-27
+    _definition.update           2024-05-17
     _description.text                   
 ;
  
@@ -195,7 +195,7 @@ save_ATOM_SITE_DISPLACE_FOURIER
       coefficients of each Fourier component belong to the child category
       ATOM_SITE_DISPLACE_FOURIER_PARAM and may be listed separately.
 ;
-    _name.category_id            MS_GROUP
+    _name.category_id            CIF_MS_HEAD
     _name.object_id              ATOM_SITE_DISPLACE_FOURIER
     loop_
     _category_key.name           '_atom_site_displace_Fourier.id'
@@ -616,7 +616,7 @@ save_ATOM_SITE_DISPLACE_LEGENDRE
     _definition.id               ATOM_SITE_DISPLACE_LEGENDRE
     _definition.scope            Category
     _definition.class            Loop
-    _definition.update           2017-09-28
+    _definition.update           2024-05-17
     _description.text                   
 ;
  
@@ -661,7 +661,7 @@ save_ATOM_SITE_DISPLACE_LEGENDRE
                   Discontinuous modulation functions and their application for 
                   analysis of modulated structures with the computing system JANA2006
 ;
-    _name.category_id            MS_GROUP
+    _name.category_id            CIF_MS_HEAD
     _name.object_id              ATOM_SITE_DISPLACE_LEGENDRE
     loop_
       _category_key.name         '_atom_site_displace_Legendre.id'
@@ -821,7 +821,7 @@ save_ATOM_SITE_DISPLACE_LEGENDRE_PARAM
     _definition.id               ATOM_SITE_DISPLACE_LEGENDRE_PARAM
     _definition.scope            Category
     _definition.class            Loop
-    _definition.update           2014-06-27
+    _definition.update           2024-05-17
     _description.text                   
 ;
 
@@ -834,7 +834,7 @@ save_ATOM_SITE_DISPLACE_LEGENDRE_PARAM
       rotational part would appear in a separate list of items
       belonging to the ATOM_SITE_ROT_LEGENDRE_PARAM category. 
 ;
-    _name.category_id            MS_GROUP
+    _name.category_id            CIF_MS_HEAD
     _name.object_id              ATOM_SITE_DISPLACE_LEGENDRE_PARAM
     loop_
       _category_key.name         '_atom_site_displace_Legendre_param.id'
@@ -897,7 +897,7 @@ save_ATOM_SITE_DISPLACE_ORTHO
     _definition.id               ATOM_SITE_DISPLACE_ORTHO
     _definition.scope            Category
     _definition.class            Loop
-    _definition.update           2014-06-27
+    _definition.update           2024-05-17
     _description.text                   
 ;
  
@@ -920,7 +920,7 @@ save_ATOM_SITE_DISPLACE_ORTHO
       information) using the data items defined in the categories 
       ATOM_SITE_DISPLACE_FOURIER and ATOM_SITE_DISPLACE_FOURIER_PARAM.
 ;
-    _name.category_id            MS_GROUP
+    _name.category_id            CIF_MS_HEAD
     _name.object_id              ATOM_SITE_DISPLACE_ORTHO
     loop_
       _category_key.name         '_atom_site_displace_ortho.id'
@@ -1086,7 +1086,7 @@ save_ATOM_SITE_DISPLACE_ORTHO_PARAM
     _definition.id               ATOM_SITE_DISPLACE_ORTHO_PARAM
     _definition.scope            Category
     _definition.class            Loop
-    _definition.update           2014-06-27
+    _definition.update           2024-05-17
     _description.text                   
 ;
 
@@ -1100,7 +1100,7 @@ save_ATOM_SITE_DISPLACE_ORTHO_PARAM
       belonging to the ATOM_SITE_ROT_ORTHO_PARAM category. 
 
 ;
-    _name.category_id            MS_GROUP
+    _name.category_id            CIF_MS_HEAD
     _name.object_id              ATOM_SITE_DISPLACE_ORTHO_PARAM
     loop_
       _category_key.name         '_atom_site_displace_ortho_param.id'
@@ -1160,7 +1160,7 @@ save_ATOM_SITE_DISPLACE_SPECIAL_FUNC
     _definition.id               ATOM_SITE_DISPLACE_SPECIAL_FUNC
     _definition.scope            Category
     _definition.class            Loop
-    _definition.update           2014-06-27
+    _definition.update           2024-05-17
     _description.text                   
 ;
 
@@ -1198,7 +1198,7 @@ save_ATOM_SITE_DISPLACE_SPECIAL_FUNC
                   Discontinuous modulation functions and their application for 
                   analysis of modulated structures with the computing system JANA2006
 ;
-    _name.category_id            MS_GROUP
+    _name.category_id            CIF_MS_HEAD
     _name.object_id              ATOM_SITE_DISPLACE_SPECIAL_FUNC
     loop_
     _category_key.name           '_atom_site_displace_special_func.atom_site_label'
@@ -1735,7 +1735,7 @@ save_ATOM_SITE_DISPLACE_XHARM
     _definition.id               ATOM_SITE_DISPLACE_XHARM
     _definition.scope            Category
     _definition.class            Loop
-    _definition.update           2014-06-27
+    _definition.update           2024-05-17
     _description.text                   
 ;
  
@@ -1779,7 +1779,7 @@ save_ATOM_SITE_DISPLACE_XHARM
                   Discontinuous modulation functions and their application for 
                   analysis of modulated structures with the computing system JANA2006 
 ;
-    _name.category_id            MS_GROUP
+    _name.category_id            CIF_MS_HEAD
     _name.object_id              ATOM_SITE_DISPLACE_XHARM
     loop_
       _category_key.name         '_atom_site_displace_xharm.id'
@@ -1940,7 +1940,7 @@ save_ATOM_SITE_DISPLACE_XHARM_PARAM
     _definition.id               ATOM_SITE_DISPLACE_XHARM_PARAM
     _definition.scope            Category
     _definition.class            Loop
-    _definition.update           2014-06-27
+    _definition.update           2024-05-17
     _description.text                   
 ;
 
@@ -1953,7 +1953,7 @@ save_ATOM_SITE_DISPLACE_XHARM_PARAM
       rotational part would appear in a separate list of items
       belonging to the ATOM_SITE_ROT_XHARM_PARAM category. 
 ;
-    _name.category_id            MS_GROUP
+    _name.category_id            CIF_MS_HEAD
     _name.object_id              ATOM_SITE_DISPLACE_XHARM_PARAM
     loop_
       _category_key.name         '_atom_site_displace_xharm_param.id'
@@ -2012,7 +2012,7 @@ save_ATOM_SITE_FOURIER_WAVE_VECTOR
     _definition.id               ATOM_SITE_FOURIER_WAVE_VECTOR
     _definition.scope            Category
     _definition.class            Loop
-    _definition.update           2014-06-27
+    _definition.update           2024-05-17
     _description.text                   
 ;
 
@@ -2020,7 +2020,7 @@ save_ATOM_SITE_FOURIER_WAVE_VECTOR
       details about the wave vectors of the Fourier terms used in the
       structural model.
 ;
-    _name.category_id            MS_GROUP
+    _name.category_id            CIF_MS_HEAD
     _name.object_id              ATOM_SITE_FOURIER_WAVE_VECTOR
     loop_
     _category_key.name          '_atom_site_Fourier_wave_vector.seq_id'
@@ -2833,7 +2833,7 @@ save_ATOM_SITE_OCC_FOURIER
     _definition.id               ATOM_SITE_OCC_FOURIER
     _definition.scope            Category
     _definition.class            Loop
-    _definition.update           2014-06-27
+    _definition.update           2024-05-17
     _description.text                   
 ;
 
@@ -2843,7 +2843,7 @@ save_ATOM_SITE_OCC_FOURIER
       coefficients of each Fourier component belong to the child category
       ATOM_SITE_OCC_FOURIER_PARAM and may be listed separately.
 ;
-    _name.category_id            MS_GROUP
+    _name.category_id            CIF_MS_HEAD
     _name.object_id              ATOM_SITE_OCC_FOURIER
     loop_
         _category_key.name      '_atom_site_occ_Fourier.id'
@@ -3163,7 +3163,7 @@ save_ATOM_SITE_OCC_LEGENDRE
     _definition.id               ATOM_SITE_OCC_LEGENDRE
     _definition.scope            Category
     _definition.class            Loop
-    _definition.update           2014-06-27
+    _definition.update           2024-05-17
     _description.text                   
 ;
  
@@ -3174,7 +3174,7 @@ save_ATOM_SITE_OCC_LEGENDRE
       function belong to the category ATOM_SITE_OCC_LEGENDRE_PARAM and 
       are listed separately.
 ;
-    _name.category_id            MS_GROUP
+    _name.category_id            CIF_MS_HEAD
     _name.object_id              ATOM_SITE_OCC_LEGENDRE
     loop_
       _category_key.name         '_atom_site_occ_Legendre.id'
@@ -3272,7 +3272,7 @@ save_ATOM_SITE_OCC_LEGENDRE_PARAM
     _definition.id               ATOM_SITE_OCC_LEGENDRE_PARAM
     _definition.scope            Category
     _definition.class            Loop
-    _definition.update           2014-06-27
+    _definition.update           2024-05-17
     _description.text                   
 ;
 
@@ -3281,7 +3281,7 @@ save_ATOM_SITE_OCC_LEGENDRE_PARAM
       functions defined in ATOM_SITE_OCC_LEGENDRE and used to 
       describe the occupational modulation of an atom or rigid group. 
 ;
-    _name.category_id            MS_GROUP
+    _name.category_id            CIF_MS_HEAD
     _name.object_id              ATOM_SITE_OCC_LEGENDRE_PARAM
     loop_
       _category_key.name         '_atom_site_occ_Legendre_param.id'
@@ -3334,7 +3334,7 @@ save_ATOM_SITE_OCC_ORTHO
     _definition.id               ATOM_SITE_OCC_ORTHO
     _definition.scope            Category
     _definition.class            Loop
-    _definition.update           2014-06-27
+    _definition.update           2024-05-17
     _description.text                   
 ;
  
@@ -3353,7 +3353,7 @@ save_ATOM_SITE_OCC_ORTHO
       information) using the data items defined in the categories  
       ATOM_SITE_OCC_FOURIER and ATOM_SITE_OCC_FOURIER_PARAM.
 ;
-    _name.category_id            MS_GROUP
+    _name.category_id            CIF_MS_HEAD
     _name.object_id              ATOM_SITE_OCC_ORTHO
     loop_
       _category_key.name         '_atom_site_occ_ortho.id'
@@ -3454,7 +3454,7 @@ save_ATOM_SITE_OCC_ORTHO_PARAM
     _definition.id               ATOM_SITE_OCC_ORTHO_PARAM
     _definition.scope            Category
     _definition.class            Loop
-    _definition.update           2014-06-27
+    _definition.update           2024-05-17
     _description.text                   
 ;
 
@@ -3463,7 +3463,7 @@ save_ATOM_SITE_OCC_ORTHO_PARAM
       functions defined in ATOM_SITE_OCC_ORTHO and used to 
       describe the occupational modulation of an atom or rigid group. 
 ;
-    _name.category_id            MS_GROUP
+    _name.category_id            CIF_MS_HEAD
     _name.object_id              ATOM_SITE_OCC_ORTHO_PARAM
     loop_
       _category_key.name         '_atom_site_occ_ortho_param.id'
@@ -3518,7 +3518,7 @@ save_ATOM_SITE_OCC_SPECIAL_FUNC
     _definition.id               ATOM_SITE_OCC_SPECIAL_FUNC
     _definition.scope            Category
     _definition.class            Loop
-    _definition.update           2014-06-27
+    _definition.update           2024-05-17
     _description.text                   
 ;
 
@@ -3557,7 +3557,7 @@ save_ATOM_SITE_OCC_SPECIAL_FUNC
                   analysis of modulated structures with the computing system JANA2006
 
 ;
-    _name.category_id            MS_GROUP
+    _name.category_id            CIF_MS_HEAD
     _name.object_id              ATOM_SITE_OCC_SPECIAL_FUNC
     loop_
         _category_key.name       '_atom_site_occ_special_func.atom_site_label'
@@ -3724,7 +3724,7 @@ save_ATOM_SITE_OCC_XHARM
     _definition.id               ATOM_SITE_OCC_XHARM
     _definition.scope            Category
     _definition.class            Loop
-    _definition.update           2014-06-27
+    _definition.update           2024-05-17
     _description.text                   
 ;
  
@@ -3734,7 +3734,7 @@ save_ATOM_SITE_OCC_XHARM
       a crenel function. The coefficients of each x-harmonic function belong 
       to the category ATOM_SITE_OCC_XHARM_PARAM and are listed separately.
 ;
-    _name.category_id            MS_GROUP
+    _name.category_id            CIF_MS_HEAD
     _name.object_id              ATOM_SITE_OCC_XHARM
     loop_
       _category_key.name         '_atom_site_occ_xharm.id'
@@ -3811,7 +3811,7 @@ save_ATOM_SITE_OCC_XHARM_PARAM
     _definition.id               ATOM_SITE_OCC_XHARM_PARAM
     _definition.scope            Category
     _definition.class            Loop
-    _definition.update           2014-06-27
+    _definition.update           2024-05-17
     _description.text                   
 ;
 
@@ -3819,7 +3819,7 @@ save_ATOM_SITE_OCC_XHARM_PARAM
       about the coefficients of the x-harmonics defined in ATOM_SITE_OCC_XHARM 
       and used to describe the occupational modulation of an atom or rigid group. 
 ;
-    _name.category_id            MS_GROUP
+    _name.category_id            CIF_MS_HEAD
     _name.object_id              ATOM_SITE_OCC_XHARM_PARAM
     loop_
       _category_key.name         '_atom_site_occ_xharm_param.id'
@@ -3892,7 +3892,7 @@ save_ATOM_SITE_PHASON
     _definition.id               ATOM_SITE_PHASON
     _definition.scope            Category
     _definition.class            Loop
-    _definition.update           2014-06-27
+    _definition.update           2024-05-17
     _description.text                   
 ;
 
@@ -3902,7 +3902,7 @@ save_ATOM_SITE_PHASON
       (for example, JANA2006) allow for this (theoretically dubious)
       atom-dependent phason treatment.
 ;
-    _name.category_id            MS_GROUP
+    _name.category_id            CIF_MS_HEAD
     _name.object_id              ATOM_SITE_PHASON
     loop_
         _category_key.name       '_atom_site_phason.atom_site_label'
@@ -4007,7 +4007,7 @@ save_ATOM_SITE_ROT_FOURIER
     _definition.id               ATOM_SITE_ROT_FOURIER
     _definition.scope            Category
     _definition.class            Loop
-    _definition.update           2014-06-27
+    _definition.update           2024-05-17
     _description.text                   
 ;
 
@@ -4020,7 +4020,7 @@ save_ATOM_SITE_ROT_FOURIER
       to the child category ATOM_SITE_ROT_FOURIER_PARAM and may be listed
       separately.
 ;
-    _name.category_id            MS_GROUP
+    _name.category_id            CIF_MS_HEAD
     _name.object_id              ATOM_SITE_ROT_FOURIER
     loop_
         _category_key.name      '_atom_site_rot_Fourier.atom_site_label'
@@ -4106,7 +4106,7 @@ save_atom_site_rot_Fourier.id
     loop_
       _alias.definition_id
           '_atom_site_rot_Fourier_id'
-    _definition.update            2024-05-19
+    _definition.update            2024-05-20
     _description.text
 ;
     A code identifying each component of the rotational modulation of a given
@@ -4423,7 +4423,7 @@ save_ATOM_SITE_ROT_LEGENDRE
     _definition.id               ATOM_SITE_ROT_LEGENDRE
     _definition.scope            Category
     _definition.class            Loop
-    _definition.update           2014-06-27
+    _definition.update           2024-05-17
     _description.text                   
 ;
 
@@ -4437,7 +4437,7 @@ save_ATOM_SITE_ROT_LEGENDRE
       of each Legendre function belong to the category
       ATOM_SITE_ROT_LEGENDRE_PARAM and are listed separately.
 ;
-    _name.category_id            MS_GROUP
+    _name.category_id            CIF_MS_HEAD
     _name.object_id              ATOM_SITE_ROT_LEGENDRE
     loop_
       _category_key.name         '_atom_site_rot_Legendre.id'
@@ -4599,7 +4599,7 @@ save_ATOM_SITE_ROT_LEGENDRE_PARAM
     _definition.id               ATOM_SITE_ROT_LEGENDRE_PARAM
     _definition.scope            Category
     _definition.class            Loop
-    _definition.update           2014-06-27
+    _definition.update           2024-05-17
     _description.text                   
 ;
 
@@ -4612,7 +4612,7 @@ save_ATOM_SITE_ROT_LEGENDRE_PARAM
       translational part would appear in a separate list of items
       belonging to the ATOM_SITE_DISPLACE_LEGENDRE_PARAM category. 
 ;
-    _name.category_id            MS_GROUP
+    _name.category_id            CIF_MS_HEAD
     _name.object_id              ATOM_SITE_ROT_LEGENDRE_PARAM
     loop_
       _category_key.name         '_atom_site_rot_Legendre_param.id'
@@ -4672,7 +4672,7 @@ save_ATOM_SITE_ROT_ORTHO
     _definition.id               ATOM_SITE_ROT_ORTHO
     _definition.scope            Category
     _definition.class            Loop
-    _definition.update           2014-06-27
+    _definition.update           2024-05-17
     _description.text                   
 ;
 
@@ -4695,7 +4695,7 @@ save_ATOM_SITE_ROT_ORTHO
       information) using the data items defined in the categories 
       ATOM_SITE_ROT_FOURIER and ATOM_SITE_ROT_FOURIER_PARAM.
 ;
-    _name.category_id            MS_GROUP
+    _name.category_id            CIF_MS_HEAD
     _name.object_id              ATOM_SITE_ROT_ORTHO
     loop_
       _category_key.name         '_atom_site_rot_ortho.id'
@@ -4861,7 +4861,7 @@ save_ATOM_SITE_ROT_ORTHO_PARAM
     _definition.id               ATOM_SITE_ROT_ORTHO_PARAM
     _definition.scope            Category
     _definition.class            Loop
-    _definition.update           2014-06-27
+    _definition.update           2024-05-17
     _description.text                   
 ;
 
@@ -4875,7 +4875,7 @@ save_ATOM_SITE_ROT_ORTHO_PARAM
       belonging to the ATOM_SITE_DISPLACE_ORTHO_PARAM category. 
 
 ;
-    _name.category_id            MS_GROUP
+    _name.category_id            CIF_MS_HEAD
     _name.object_id              ATOM_SITE_ROT_ORTHO_PARAM
     loop_
       _category_key.name         '_atom_site_rot_ortho_param.id'
@@ -4935,7 +4935,7 @@ save_ATOM_SITE_ROT_SPECIAL_FUNC
     _definition.id               ATOM_SITE_ROT_SPECIAL_FUNC
     _definition.scope            Category
     _definition.class            Loop
-    _definition.update           2014-06-27
+    _definition.update           2024-05-17
     _description.text                   
 ;
 
@@ -4976,7 +4976,7 @@ rigid groups.
                   analysis of modulated structures with the computing system JANA2006
 
 ;
-    _name.category_id            MS_GROUP
+    _name.category_id            CIF_MS_HEAD
     _name.object_id              ATOM_SITE_ROT_SPECIAL_FUNC
     _category_key.name           '_atom_site_rot_special_func.atom_site_label'
 
@@ -5509,7 +5509,7 @@ save_ATOM_SITE_ROT_XHARM
     _definition.id               ATOM_SITE_ROT_XHARM
     _definition.scope            Category
     _definition.class            Loop
-    _definition.update           2014-06-27
+    _definition.update           2024-05-17
     _description.text                   
 ;
 
@@ -5523,7 +5523,7 @@ save_ATOM_SITE_ROT_XHARM
       of each x-harmonic function belong to the category
       ATOM_SITE_ROT_XHARM_PARAM and are listed separately.
 ;
-    _name.category_id            MS_GROUP
+    _name.category_id            CIF_MS_HEAD
     _name.object_id              ATOM_SITE_ROT_XHARM
     loop_
       _category_key.name         '_atom_site_rot_xharm.id'
@@ -5683,7 +5683,7 @@ save_ATOM_SITE_ROT_XHARM_PARAM
     _definition.id               ATOM_SITE_ROT_XHARM_PARAM
     _definition.scope            Category
     _definition.class            Loop
-    _definition.update           2014-06-27
+    _definition.update           2024-05-17
     _description.text                   
 ;
 
@@ -5696,7 +5696,7 @@ save_ATOM_SITE_ROT_XHARM_PARAM
       translational part would appear in a separate list of items
       belonging to the ATOM_SITE_DISPLACE_XHARM_PARAM category. 
 ;
-    _name.category_id            MS_GROUP
+    _name.category_id            CIF_MS_HEAD
     _name.object_id              ATOM_SITE_ROT_XHARM_PARAM
     loop_
       _category_key.name         '_atom_site_rot_xharm_param.id'
@@ -5756,7 +5756,7 @@ save_ATOM_SITE_U_FOURIER
     _definition.id               ATOM_SITE_U_FOURIER
     _definition.scope            Category
     _definition.class            Loop
-    _definition.update           2014-06-27
+    _definition.update           2024-05-17
     _description.text                   
 ;
 
@@ -5764,7 +5764,7 @@ save_ATOM_SITE_U_FOURIER
       about the Fourier components describing the modulation of the
       ADPs in a modulated structure.
 ;
-    _name.category_id            MS_GROUP
+    _name.category_id            CIF_MS_HEAD
     _name.object_id              ATOM_SITE_U_FOURIER
     loop_
         _category_key.name       '_atom_site_U_Fourier.id'
@@ -6125,7 +6125,7 @@ save_ATOM_SITE_U_LEGENDRE
     _definition.id               ATOM_SITE_U_LEGENDRE
     _definition.scope            Category
     _definition.class            Loop
-    _definition.update           2014-06-27
+    _definition.update           2024-05-17
     _description.text                   
 ;
 
@@ -6136,7 +6136,7 @@ save_ATOM_SITE_U_LEGENDRE
       of each Legendre function belong to the category
       ATOM_SITE_U_LEGENDRE_PARAM and are listed separately.
 ;
-    _name.category_id            MS_GROUP
+    _name.category_id            CIF_MS_HEAD
     _name.object_id              ATOM_SITE_U_LEGENDRE
     loop_
       _category_key.name         '_atom_site_u_Legendre.id'
@@ -6266,7 +6266,7 @@ save_ATOM_SITE_U_LEGENDRE_PARAM
     _definition.id               ATOM_SITE_U_LEGENDRE_PARAM
     _definition.scope            Category
     _definition.class            Loop
-    _definition.update           2014-06-27
+    _definition.update           2024-05-17
     _description.text                   
 ;
 
@@ -6275,7 +6275,7 @@ save_ATOM_SITE_U_LEGENDRE_PARAM
       functions defined in ATOM_SITE_U_LEGENDRE and used to 
       describe the ADP modulation of an atom. 
 ;
-    _name.category_id            MS_GROUP
+    _name.category_id            CIF_MS_HEAD
     _name.object_id              ATOM_SITE_U_LEGENDRE_PARAM
     loop_
       _category_key.name         '_atom_site_U_Legendre_param.id'
@@ -6330,7 +6330,7 @@ save_ATOM_SITE_U_ORTHO
     _definition.id               ATOM_SITE_U_ORTHO
     _definition.scope            Category
     _definition.class            Loop
-    _definition.update           2014-06-27
+    _definition.update           2024-05-17
     _description.text                   
 ;
  
@@ -6345,7 +6345,7 @@ save_ATOM_SITE_U_ORTHO
       of each orthogonalized function belong to the category
       ATOM_SITE_U_ORTHO_PARAM and are listed separately.
 ;
-    _name.category_id            MS_GROUP
+    _name.category_id            CIF_MS_HEAD
     _name.object_id              ATOM_SITE_U_ORTHO
     loop_
       _category_key.name         '_atom_site_U_ortho.id'
@@ -6482,7 +6482,7 @@ save_ATOM_SITE_U_ORTHO_PARAM
     _definition.id               ATOM_SITE_U_ORTHO_PARAM
     _definition.scope            Category
     _definition.class            Loop
-    _definition.update           2014-06-27
+    _definition.update           2024-05-17
     _description.text                   
 ;
 
@@ -6491,7 +6491,7 @@ save_ATOM_SITE_U_ORTHO_PARAM
       functions defined in ATOM_SITE_U_ORTHO and used to 
       describe the ADP modulation of an atom. 
 ;
-    _name.category_id            MS_GROUP
+    _name.category_id            CIF_MS_HEAD
     _name.object_id              ATOM_SITE_U_ORTHO_PARAM
     loop_
       _category_key.name         '_atom_site_U_ortho_param.id'
@@ -6546,7 +6546,7 @@ save_ATOM_SITE_U_XHARM
     _definition.id               ATOM_SITE_U_XHARM
     _definition.scope            Category
     _definition.class            Loop
-    _definition.update           2014-06-27
+    _definition.update           2024-05-17
     _description.text                   
 ;
  
@@ -6557,7 +6557,7 @@ save_ATOM_SITE_U_XHARM
       of each x-harmonic function belong to the category
       ATOM_SITE_U_XHARM_PARAM and are listed separately.
 ;
-    _name.category_id            MS_GROUP
+    _name.category_id            CIF_MS_HEAD
     _name.object_id              ATOM_SITE_U_XHARM
     loop_
       _category_key.name         '_atom_site_U_xharm.id'
@@ -6686,7 +6686,7 @@ save_ATOM_SITE_U_XHARM_PARAM
     _definition.id               ATOM_SITE_U_XHARM_PARAM
     _definition.scope            Category
     _definition.class            Loop
-    _definition.update           2014-06-27
+    _definition.update           2024-05-17
     _description.text                   
 ;
 
@@ -6695,7 +6695,7 @@ save_ATOM_SITE_U_XHARM_PARAM
       defined in ATOM_SITE_U_XHARM and used to describe the ADP 
       modulation of an atom. 
 ;
-    _name.category_id            MS_GROUP
+    _name.category_id            CIF_MS_HEAD
     _name.object_id              ATOM_SITE_U_XHARM_PARAM
     loop_
       _category_key.name         '_atom_site_U_xharm_param.id'
@@ -6750,7 +6750,7 @@ save_ATOM_SITES_AXES
     _definition.id               ATOM_SITES_AXES
     _definition.scope            Category
     _definition.class            Loop
-    _definition.update           2017-03-11
+    _definition.update           2024-05-17
     _description.text                   
 ;
 
@@ -6760,7 +6760,7 @@ save_ATOM_SITES_AXES
       for individual atom sites are described by data items in
       the ATOM_SITE_DISPLACE_* and ATOM_SITE_ROT_* categories.
 ;
-    _name.category_id            MS_GROUP
+    _name.category_id            CIF_MS_HEAD
     _name.object_id              ATOM_SITES_AXES
     loop_
       _category_key.name         '_atom_sites_axes.matrix_seq_id'
@@ -7109,7 +7109,7 @@ save_ATOM_SITES_DISPLACE_FOURIER
     _definition.id               ATOM_SITES_DISPLACE_FOURIER
     _definition.scope            Category
     _definition.class            Set
-    _definition.update           2017-03-11
+    _definition.update           2024-05-17
     _description.text                   
 ;
 
@@ -7119,7 +7119,7 @@ save_ATOM_SITES_DISPLACE_FOURIER
       Details for individual atom sites are described by data items in
       the ATOM_SITE_DISPLACE_FOURIER category.
 ;
-    _name.category_id            MS_GROUP
+    _name.category_id            CIF_MS_HEAD
     _name.object_id              ATOM_SITES_DISPLACE_FOURIER
 save_
 
@@ -7162,14 +7162,14 @@ save_ATOM_SITES_MODULATION
     _definition.id               ATOM_SITES_MODULATION
     _definition.scope            Category
     _definition.class            Set
-    _definition.update           2017-03-11
+    _definition.update           2024-05-17
     _description.text                   
 ;
 
       Data items in the ATOM_SITES_MODULATION category record details
       common to the modulation of atom sites in a modulated structure.
 ;
-    _name.category_id            MS_GROUP
+    _name.category_id            CIF_MS_HEAD
     _name.object_id              ATOM_SITES_MODULATION
 
 save_
@@ -7428,7 +7428,7 @@ save_ATOM_SITES_ORTHO
     _definition.id               ATOM_SITES_ORTHO
     _definition.scope            Category
     _definition.class            Loop
-    _definition.update           2014-06-27
+    _definition.update           2024-05-17
     _description.text                   
 ;
  
@@ -7451,7 +7451,7 @@ save_ATOM_SITES_ORTHO
                   Discontinuous modulation functions and their application for 
                   analysis of modulated structures with the computing system JANA2006
 ;
-    _name.category_id            MS_GROUP
+    _name.category_id            CIF_MS_HEAD
     _name.object_id              ATOM_SITES_ORTHO
     loop_
       _category_key.name         '_atom_sites_ortho.func_id'
@@ -7616,7 +7616,7 @@ save_ATOM_SITES_ROT_FOURIER
     _definition.id               ATOM_SITES_ROT_FOURIER
     _definition.scope            Category
     _definition.class            Set
-    _definition.update           2014-06-27
+    _definition.update           2024-05-17
     _description.text                   
 ;
 
@@ -7627,7 +7627,7 @@ save_ATOM_SITES_ROT_FOURIER
       Details for individual atom sites are described by data items in
       the ATOM_SITES_ROT_FOURIER category.
 ;
-    _name.category_id            MS_GROUP
+    _name.category_id            CIF_MS_HEAD
     _name.object_id              ATOM_SITES_ROT_FOURIER
 
 save_
@@ -7766,7 +7766,7 @@ save_CELL_SUBSYSTEM
     _definition.id               CELL_SUBSYSTEM
     _definition.scope            Category
     _definition.class            Loop
-    _definition.update           2014-06-27
+    _definition.update           2024-05-17
     _description.text                   
 ;
 
@@ -7774,7 +7774,7 @@ save_CELL_SUBSYSTEM
       the crystallographic cell parameters of each subsystem present in
       a composite.
 ;
-    _name.category_id            MS_GROUP
+    _name.category_id            CIF_MS_HEAD
     _name.object_id              CELL_SUBSYSTEM
     loop_
         _category_key.name       '_cell_subsystem.code'
@@ -9175,14 +9175,14 @@ save_CELL_SUBSYSTEMS
     _definition.id               CELL_SUBSYSTEMS
     _definition.scope            Category
     _definition.class            Set
-    _definition.update           2016-11-17
+    _definition.update           2024-05-17
     _description.text                   
 ;
 
       Data items in the CELL_SUBSYSTEMS category describe overall aspects
       of the subsystems present in a composite.
 ;
-    _name.category_id            MS_GROUP
+    _name.category_id            CIF_MS_HEAD
     _name.object_id              CELL_SUBSYSTEMS
 
 save_
@@ -9217,7 +9217,7 @@ save_CELL_WAVE_VECTOR
     _definition.id               cell_wave_vector
     _definition.scope            Category
     _definition.class            Loop
-    _definition.update           2014-06-27
+    _definition.update           2024-05-17
     _description.text                   
 ;
 
@@ -9228,7 +9228,7 @@ save_CELL_WAVE_VECTOR
       over all wave vectors. In this version of the dictionary, the
       index i has been restricted to be less than 9.
 ;
-    _name.category_id            MS_GROUP
+    _name.category_id            CIF_MS_HEAD
     _name.object_id              CELL_WAVE_VECTOR
 	loop_
     _category_key.name           '_cell_wave_vector.seq_id'
@@ -9412,7 +9412,7 @@ save_CELL_WAVE_VECTORS
     _definition.id               CELL_WAVE_VECTORS
     _definition.scope            Category
     _definition.class            Set
-    _definition.update           2016-11-17
+    _definition.update           2024-05-17
     _description.text                   
 ;
 
@@ -9423,7 +9423,7 @@ save_CELL_WAVE_VECTORS
       over all wave vectors. In this version of the dictionary, the
       index i has been restricted to be less than 9.
 ;
-    _name.category_id            MS_GROUP
+    _name.category_id            CIF_MS_HEAD
     _name.object_id              CELL_WAVE_VECTORS
 
 save_
@@ -9586,7 +9586,7 @@ save_DIFFRN_REFLN
     _definition.id               DIFFRN_REFLN
     _definition.scope            Category
     _definition.class            Loop
-    _definition.update           2016-11-17
+    _definition.update           2024-05-17
     _description.text                   
 ;
 
@@ -9600,7 +9600,7 @@ save_DIFFRN_REFLN
       of the core CIF dictionary definitions to the indexing of
       diffraction intensities by higher-dimensional components.
 ;
-    _name.category_id            MS_GROUP
+    _name.category_id            CIF_MS_HEAD
     _name.object_id              DIFFRN_REFLN
     loop_
       _category_key.name
@@ -10229,7 +10229,7 @@ save_DIFFRN_STANDARD_REFLN
     _definition.id               DIFFRN_STANDARD_REFLN
     _definition.scope            Category
     _definition.class            Loop
-    _definition.update           2014-06-27
+    _definition.update           2024-05-17
     _description.text                   
 ;
 
@@ -10242,7 +10242,7 @@ save_DIFFRN_STANDARD_REFLN
       to the indexing of standard reflections by
       higher-dimensional components.
 ;
-    _name.category_id            MS_GROUP
+    _name.category_id            CIF_MS_HEAD
     _name.object_id              DIFFRN_STANDARD_REFLN
     loop_
       _category_key.name
@@ -10907,7 +10907,7 @@ save_GEOM_ANGLE
     _definition.id               GEOM_ANGLE
     _definition.scope            Category
     _definition.class            Loop
-    _definition.update           2014-06-27
+    _definition.update           2024-05-17
     _description.text                   
 ;
 
@@ -10923,7 +10923,7 @@ save_GEOM_ANGLE
       calculation method is not explicit in either this
       dictionary or the core.
 ;
-    _name.category_id            MS_GROUP
+    _name.category_id            CIF_MS_HEAD
     _name.object_id              GEOM_ANGLE
     loop_
        _category_key.name
@@ -11618,7 +11618,7 @@ save_REFINE
     _definition.id               REFINE
     _definition.scope            Category
     _definition.class            Set
-    _definition.update           2016-11-17
+    _definition.update           2024-05-17
     _description.text                   
 ;
 
@@ -11628,7 +11628,7 @@ save_REFINE
       dictionary and are specific to the refinement of
       modulated structures.
 ;
-    _name.category_id            MS_GROUP
+    _name.category_id            CIF_MS_HEAD
     _name.object_id              REFINE
 
 save_
@@ -11750,7 +11750,7 @@ save_REFLN
     _definition.id               REFLN
     _definition.scope            Category
     _definition.class            Loop
-    _definition.update           2014-06-27
+    _definition.update           2024-05-17
     _description.text                   
 ;
 
@@ -11764,7 +11764,7 @@ save_REFLN
       indexing of reflections used in the refinement by
       higher-dimensional components.
 ;
-    _name.category_id            MS_GROUP
+    _name.category_id            CIF_MS_HEAD
     _name.object_id              REFLN
     loop_
       _category_key.name
@@ -11971,7 +11971,7 @@ save_REFLNS
     _definition.id               REFLNS
     _definition.scope            Category
     _definition.class            Set
-    _definition.update           2014-06-27
+    _definition.update           2024-05-17
     _description.text                   
 ;
 
@@ -11985,7 +11985,7 @@ save_REFLNS
       checks on the range of values recorded for each of the
       additional Miller indices given in the REFLN category.
 ;
-    _name.category_id            MS_GROUP
+    _name.category_id            CIF_MS_HEAD
     _name.object_id              REFLNS
 save_
 
@@ -12567,7 +12567,7 @@ save_SPACE_GROUP_SYMOP
     _definition.id               SPACE_GROUP_SYMOP
     _definition.scope            Category
     _definition.class            Loop
-    _definition.update           2014-06-27
+    _definition.update           2024-05-17
     _description.text                   
 ;
 
@@ -12579,7 +12579,7 @@ save_SPACE_GROUP_SYMOP
       category, but include the _ssg_ flag to indicate their
       dimensionality of > 3.
 ;
-    _name.category_id            MS_GROUP
+    _name.category_id            CIF_MS_HEAD
     _name.object_id              SPACE_GROUP_SYMOP
     _category_key.name           '_space_group_symop.ssg_id'
 
@@ -12879,7 +12879,7 @@ loop_
      Returned all additional indices to main dictionary, removed category_id
      from templates(James Hester)
 ;
-         3.2.1    2024-05-19
+         3.2.1    2024-05-20
 ;
      Corrected a typo in the definition of the _geom_torsion.angle data item.
 
@@ -12888,6 +12888,8 @@ loop_
 
      Updated the CIF_CORE dictionary import statement with the new Head
      category name.
+
+     Renamed the head category from 'MS_GROUP' to 'CIF_MS_HEAD'.
 
      Restored the _atom_site_rot_Fourier.id data item.
 ;
