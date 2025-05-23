@@ -24,7 +24,7 @@ data_CIF_MS
     _dictionary.formalism        Modulated
     _dictionary.class            Instance
     _dictionary.version          3.2.1
-    _dictionary.date             2024-05-17
+    _dictionary.date             2025-05-23
     _dictionary.uri              http://www.iucr.org/cif/dic/cif_ms.dic
     _dictionary.ddl_conformance  3.13.1
     _dictionary.namespace        ModStruct
@@ -12645,7 +12645,8 @@ save_
 save_geom_angle.value
 
 _definition.id                          '_geom_angle.value'
-_definition.update                      2016-11-17
+_alias.definition_id                    '_geom_angle'
+_definition.update                      2025-05-23
 _description.text                       
 ;
      Angle defined by the atoms located at atom_site_x/site_symmetry_x for
@@ -12657,7 +12658,7 @@ _type.purpose                           Measurand
 _type.source                            Derived
 _type.container                         Single
 _type.contents                          Real
-_enumeration.range                      -180.:180.
+_enumeration.range                      0.0:180.0
 _units.code                             degrees
 
 save_
@@ -12855,7 +12856,7 @@ loop_
      Returned all additional indices to main dictionary, removed category_id
      from templates(James Hester)
 ;
-         3.2.1    2024-05-17
+         3.2.1    2025-05-23
 ;
      Corrected a typo in the definition of the _geom_torsion.angle data item.
 
@@ -12866,4 +12867,7 @@ loop_
      category name.
 
      Renamed the head category from 'MS_GROUP' to 'CIF_MS_HEAD'.
+
+     Updated the redefined _geom_angle.value definition to be more compatible
+     with the original one from the coreCIF dictionary.
 ;
