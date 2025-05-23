@@ -12670,11 +12670,10 @@ loop_
   _alias.definition_id
          '_geom_angle_su'    
          '_geom_angle.value_esd' 
-_definition.update                      2016-11-17
+_definition.update                      2025-05-23
 _description.text                       
 ;
-     Standard Uncertainty of the
-     angle defined by the sites identified by _geom_angle.id
+    Standard uncertainty of _geom_angle.value.
 ;
 _name.category_id                       geom_angle
 _name.object_id                         value_su
