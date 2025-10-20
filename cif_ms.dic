@@ -51,8 +51,6 @@ save_CIF_MS_HEAD
     _import.get
         [
          {'dupl':Ignore  'file':cif_core.dic  'mode':Full  'save':CIF_CORE_HEAD}
-         {'dupl':Ignore  'file':cif_rstr.dic  'mode':Full  'save':CIF_RSTR}
-         {'dupl':Ignore  'file':cif_twin.dic  'mode':Full  'save':TWIN_GROUP}
         ]
 
 save_
