@@ -24,7 +24,7 @@ data_CIF_MS
     _dictionary.formalism         Modulated
     _dictionary.class             Instance
     _dictionary.version           3.2.5
-    _dictionary.date              2025-10-20
+    _dictionary.date              2025-10-28
     _dictionary.uri               http://www.iucr.org/cif/dic/cif_ms.dic
     _dictionary.ddl_conformance   4.1.0
     _dictionary.namespace         ModStruct
@@ -852,7 +852,7 @@ save_atom_site_anharmonic_adp_fourier.wave_vector_seq_id
 
     _definition.id
         '_atom_site_anharmonic_ADP_Fourier.wave_vector_seq_id'
-    _definition.update            2025-10-20
+    _definition.update            2025-10-28
     _description.text
 ;
        A numeric code identifying the wave vectors of the Fourier terms
@@ -867,6 +867,8 @@ save_atom_site_anharmonic_adp_fourier.wave_vector_seq_id
     _type.source                  Related
     _type.container               Single
     _type.contents                Integer
+    _enumeration.range            0:
+    _units.code                   None
 
 save_
 
@@ -1310,7 +1312,7 @@ save_
 save_atom_site_anharmonic_adp_legendre.order
 
     _definition.id                '_atom_site_anharmonic_ADP_Legendre.order'
-    _definition.update            2024-05-02
+    _definition.update            2025-10-28
     _description.text
 ;
       The order of the Legendre polynomial.
@@ -1322,6 +1324,7 @@ save_atom_site_anharmonic_adp_legendre.order
     _type.container               Single
     _type.contents                Integer
     _enumeration.range            0:
+    _units.code                   None
 
 save_
 
@@ -1747,7 +1750,7 @@ save_
 save_atom_site_anharmonic_adp_xharm.order
 
     _definition.id                '_atom_site_anharmonic_ADP_xharm.order'
-    _definition.update            2024-05-02
+    _definition.update            2025-10-28
     _description.text
 ;
       The order of each x-harmonic function.
@@ -1759,6 +1762,7 @@ save_atom_site_anharmonic_adp_xharm.order
     _type.container               Single
     _type.contents                Integer
     _enumeration.range            0:
+    _units.code                   None
 
 save_
 
@@ -2087,7 +2091,7 @@ save_atom_site_displace_fourier.wave_vector_seq_id
         '_atom_site_displace_Fourier.wave_vector_seq_id'
     _alias.definition_id
         '_atom_site_displace_Fourier_wave_vector_seq_id'
-    _definition.update            2024-04-28
+    _definition.update            2025-10-28
     _description.text
 ;
       A numeric code identifying the wave vectors of the Fourier terms
@@ -2104,6 +2108,8 @@ save_atom_site_displace_fourier.wave_vector_seq_id
     _type.source                  Related
     _type.container               Single
     _type.contents                Integer
+    _enumeration.range            0:
+    _units.code                   None
 
 save_
 
@@ -2761,7 +2767,7 @@ save_atom_site_displace_legendre.order
     _definition.id                '_atom_site_displace_Legendre.order'
     _alias.definition_id
         '_jana_atom_site_displace_Legendre_param_order'
-    _definition.update            2024-08-06
+    _definition.update            2025-10-28
     _description.text
 ;
       The order of the Legendre polynomial.
@@ -2773,6 +2779,7 @@ save_atom_site_displace_legendre.order
     _type.container               Single
     _type.contents                Integer
     _enumeration.range            1:
+    _units.code                   None
 
 save_
 
@@ -3814,7 +3821,7 @@ save_atom_site_displace_xharm.order
 
     _definition.id                '_atom_site_displace_xharm.order'
     _alias.definition_id          '_jana_atom_site_displace_XHarm_param_order'
-    _definition.update            2024-08-06
+    _definition.update            2025-10-28
     _description.text
 ;
       The order of each x-harmonic function, where 1, points to the
@@ -3827,6 +3834,7 @@ save_atom_site_displace_xharm.order
     _type.container               Single
     _type.contents                Integer
     _enumeration.range            1:
+    _units.code                   None
 
 save_
 
@@ -4515,7 +4523,7 @@ save_
 save_atom_site_fourier_wave_vector.q_coeff
 
     _definition.id                '_atom_site_Fourier_wave_vector.q_coeff'
-    _definition.update            2025-10-20
+    _definition.update            2025-10-28
     _description.text
 ;
       The list of coefficients that express a given k as a linear combination
@@ -4532,6 +4540,7 @@ save_atom_site_fourier_wave_vector.q_coeff
     _type.container               Matrix
     _type.contents                Integer
     _enumeration.default          [0]
+    _units.code                   None
 
     loop_
       _method.purpose
@@ -4564,7 +4573,7 @@ save_atom_site_fourier_wave_vector.q_coeff_seq_id
 
     _definition.id
         '_atom_site_Fourier_wave_vector.q_coeff_seq_id'
-    _definition.update            2025-10-20
+    _definition.update            2025-10-28
     _description.text
 ;
       The list of numeric codes that identifies each independent wave vector
@@ -4583,6 +4592,7 @@ save_atom_site_fourier_wave_vector.q_coeff_seq_id
     _type.container               Matrix
     _type.contents                Integer
     _enumeration.default          [1]
+    _units.code                   None
 
     loop_
       _method.purpose
@@ -4615,7 +4625,7 @@ save_atom_site_fourier_wave_vector.seq_id
 
     _definition.id                '_atom_site_Fourier_wave_vector.seq_id'
     _alias.definition_id          '_atom_site_Fourier_wave_vector_seq_id'
-    _definition.update            2024-04-28
+    _definition.update            2025-10-28
     _description.text
 ;
       A numeric code identifying the wave vectors defined in
@@ -4628,6 +4638,7 @@ save_atom_site_fourier_wave_vector.seq_id
     _type.container               Single
     _type.contents                Integer
     _enumeration.range            0:
+    _units.code                   None
 
 save_
 
@@ -4635,7 +4646,7 @@ save_atom_site_fourier_wave_vector.x
 
     _definition.id                '_atom_site_Fourier_wave_vector.x'
     _alias.definition_id          '_atom_site_Fourier_wave_vector_x'
-    _definition.update            2024-07-31
+    _definition.update            2025-10-28
     _description.text
 ;
       x component of a wave vector used in a Fourier series with
@@ -4651,6 +4662,7 @@ save_atom_site_fourier_wave_vector.x
     _type.container               Single
     _type.contents                Real
     _enumeration.default          0.0
+    _units.code                   None
     _method.purpose               Evaluation
     _method.expression
 ;
@@ -4664,7 +4676,7 @@ save_
 save_atom_site_fourier_wave_vector.xyz
 
     _definition.id                '_atom_site_Fourier_wave_vector.xyz'
-    _definition.update            2024-07-31
+    _definition.update            2025-10-28
     _description.text
 ;
       Components of a wave vector used in a Fourier series with
@@ -4680,6 +4692,7 @@ save_atom_site_fourier_wave_vector.xyz
     _type.container               Matrix
     _type.dimension               '[3]'
     _type.contents                Real
+    _units.code                   None
     _method.purpose               Evaluation
     _method.expression
 ;
@@ -4719,7 +4732,7 @@ save_atom_site_fourier_wave_vector.y
 
     _definition.id                '_atom_site_Fourier_wave_vector.y'
     _alias.definition_id          '_atom_site_Fourier_wave_vector_y'
-    _definition.update            2024-07-31
+    _definition.update            2025-10-28
     _description.text
 ;
       y component of a wave vector used in a Fourier series with
@@ -4735,6 +4748,7 @@ save_atom_site_fourier_wave_vector.y
     _type.container               Single
     _type.contents                Real
     _enumeration.default          0.0
+    _units.code                   None
     _method.purpose               Evaluation
     _method.expression
 ;
@@ -4749,7 +4763,7 @@ save_atom_site_fourier_wave_vector.z
 
     _definition.id                '_atom_site_Fourier_wave_vector.z'
     _alias.definition_id          '_atom_site_Fourier_wave_vector_z'
-    _definition.update            2024-07-31
+    _definition.update            2025-10-28
     _description.text
 ;
       z component of a wave vector used in a Fourier series with
@@ -4765,6 +4779,7 @@ save_atom_site_fourier_wave_vector.z
     _type.container               Single
     _type.contents                Real
     _enumeration.default          0.0
+    _units.code                   None
     _method.purpose               Evaluation
     _method.expression
 ;
@@ -4922,7 +4937,7 @@ save_atom_site_occ_crenel.ortho_eps
 
     _definition.id                '_atom_site_occ_crenel.ortho_eps'
     _alias.definition_id          '_jana_atom_site_crenel_ortho_func_eps'
-    _definition.update            2025-06-04
+    _definition.update            2025-10-28
     _description.text
 ;
       The set of harmonic functions used in the Fourier series describing the
@@ -4949,6 +4964,7 @@ save_atom_site_occ_crenel.ortho_eps
     _type.container               Single
     _type.contents                Real
     _enumeration.default          0.95
+    _units.code                   None
 
 save_
 
@@ -5132,7 +5148,7 @@ save_atom_site_occ_fourier.wave_vector_seq_id
 
     _definition.id                '_atom_site_occ_Fourier.wave_vector_seq_id'
     _alias.definition_id          '_atom_site_occ_Fourier_wave_vector_seq_id'
-    _definition.update            2024-04-28
+    _definition.update            2025-10-28
     _description.text
 ;
       A numeric code identifying the wave vectors of the Fourier terms
@@ -5147,6 +5163,8 @@ save_atom_site_occ_fourier.wave_vector_seq_id
     _type.source                  Related
     _type.container               Single
     _type.contents                Integer
+    _enumeration.range            0:
+    _units.code                   None
 
 save_
 
@@ -5577,7 +5595,7 @@ save_atom_site_occ_legendre.order
 
     _definition.id                '_atom_site_occ_Legendre.order'
     _alias.definition_id          '_jana_atom_site_occ_Legendre_param_order'
-    _definition.update            2024-08-06
+    _definition.update            2025-10-28
     _description.text
 ;
       The order of the Legendre polynomial.
@@ -5589,6 +5607,7 @@ save_atom_site_occ_legendre.order
     _type.container               Single
     _type.contents                Integer
     _enumeration.range            0:
+    _units.code                   None
 
 save_
 
@@ -5822,7 +5841,7 @@ save_atom_site_occ_xharm.order
 
     _definition.id                '_atom_site_occ_xharm.order'
     _alias.definition_id          '_jana_atom_site_occ_XHarm_param_order'
-    _definition.update            2024-08-06
+    _definition.update            2025-10-28
     _description.text
 ;
       The order of each x-harmonics function.
@@ -5834,6 +5853,7 @@ save_atom_site_occ_xharm.order
     _type.container               Single
     _type.contents                Integer
     _enumeration.range            0:
+    _units.code                   None
 
 save_
 
@@ -6250,7 +6270,7 @@ save_atom_site_rot_fourier.wave_vector_seq_id
 
     _definition.id                '_atom_site_rot_Fourier.wave_vector_seq_id'
     _alias.definition_id          '_atom_site_rot_Fourier_wave_vector_seq_id'
-    _definition.update            2024-04-28
+    _definition.update            2025-10-28
     _description.text
 ;
       A numeric code identifying the wave vectors of the Fourier terms
@@ -6265,6 +6285,8 @@ save_atom_site_rot_fourier.wave_vector_seq_id
     _type.source                  Related
     _type.container               Single
     _type.contents                Integer
+    _enumeration.range            0:
+    _units.code                   None
 
 save_
 
@@ -6919,7 +6941,7 @@ save_
 save_atom_site_rot_legendre.order
 
     _definition.id                '_atom_site_rot_Legendre.order'
-    _definition.update            2024-08-06
+    _definition.update            2025-10-28
     _description.text
 ;
       The order of the Legendre polynomial.
@@ -6931,6 +6953,7 @@ save_atom_site_rot_legendre.order
     _type.container               Single
     _type.contents                Integer
     _enumeration.range            0:
+    _units.code                   None
 
 save_
 
@@ -7629,7 +7652,7 @@ save_
 save_atom_site_rot_xharm.order
 
     _definition.id                '_atom_site_rot_xharm.order'
-    _definition.update            2024-08-06
+    _definition.update            2025-10-28
     _description.text
 ;
       The order of each x-harmonic function.
@@ -7641,6 +7664,7 @@ save_atom_site_rot_xharm.order
     _type.container               Single
     _type.contents                Integer
     _enumeration.range            0:
+    _units.code                   None
 
 save_
 
@@ -8023,7 +8047,7 @@ save_atom_site_u_fourier.wave_vector_seq_id
 
     _definition.id                '_atom_site_U_Fourier.wave_vector_seq_id'
     _alias.definition_id          '_atom_site_U_Fourier_wave_vector_seq_id'
-    _definition.update            2024-07-31
+    _definition.update            2025-10-28
     _description.text
 ;
       A numeric code identifying the wave vectors of the Fourier terms
@@ -8038,6 +8062,8 @@ save_atom_site_u_fourier.wave_vector_seq_id
     _type.source                  Related
     _type.container               Single
     _type.contents                Integer
+    _enumeration.range            0:
+    _units.code                   None
 
 save_
 
@@ -8600,7 +8626,7 @@ save_atom_site_u_legendre.order
 
     _definition.id                '_atom_site_U_Legendre.order'
     _alias.definition_id          '_jana_atom_site_U_Legendre_param_order'
-    _definition.update            2024-08-06
+    _definition.update            2025-10-28
     _description.text
 ;
       The order of the Legendre polynomial.
@@ -8612,6 +8638,7 @@ save_atom_site_u_legendre.order
     _type.container               Single
     _type.contents                Integer
     _enumeration.range            0:
+    _units.code                   None
 
 save_
 
@@ -9002,7 +9029,7 @@ save_atom_site_u_xharm.order
 
     _definition.id                '_atom_site_U_xharm.order'
     _alias.definition_id          '_jana_atom_site_U_XHarm_param_order'
-    _definition.update            2024-08-06
+    _definition.update            2025-10-28
     _description.text
 ;
       The order of each x-harmonic function.
@@ -9014,6 +9041,7 @@ save_atom_site_u_xharm.order
     _type.container               Single
     _type.contents                Integer
     _enumeration.range            0:
+    _units.code                   None
 
 save_
 
@@ -9102,7 +9130,7 @@ save_
 save_atom_sites_axes.matrix
 
     _definition.id                '_atom_sites_axes.matrix'
-    _definition.update            2019-04-01
+    _definition.update            2025-10-28
     _description.text
 ;
       A 3x3 matrix, A, that relates the axes used to describe the atomic
@@ -9123,13 +9151,14 @@ save_atom_sites_axes.matrix
                                    [1.0  0.0  0.0]  [0.0  1.0  0.0]
                                    [0.0  0.0  1.0]
                                   ]
+    _units.code                   None
 
 save_
 
 save_atom_sites_axes.matrix_seq_id
 
     _definition.id                '_atom_sites_axes.matrix_seq_id'
-    _definition.update            2019-09-25
+    _definition.update            2025-10-28
     _description.text
 ;
       A numeric code to identify each transformation matrix given
@@ -9142,6 +9171,7 @@ save_atom_sites_axes.matrix_seq_id
     _type.container               Single
     _type.contents                Integer
     _enumeration.range            0:
+    _units.code                   None
 
 save_
 
@@ -9712,7 +9742,7 @@ save_
 save_atom_sites_ortho.coeff_cos_list
 
     _definition.id                '_atom_sites_ortho.coeff_cos_list'
-    _definition.update            2019-04-01
+    _definition.update            2025-10-28
     _description.text
 ;
       The list of cosine components of an orthogonalized function
@@ -9727,13 +9757,14 @@ save_atom_sites_ortho.coeff_cos_list
     _type.dimension               '[]'
     _type.contents                Real
     _enumeration.default          [0.0]
+    _units.code                   None
 
 save_
 
 save_atom_sites_ortho.coeff_sin_list
 
     _definition.id                '_atom_sites_ortho.coeff_sin_list'
-    _definition.update            2019-04-01
+    _definition.update            2025-10-28
     _description.text
 ;
       The list of sine components of an orthogonalized function
@@ -9748,6 +9779,7 @@ save_atom_sites_ortho.coeff_sin_list
     _type.dimension               '[]'
     _type.contents                Real
     _enumeration.default          [0.0]
+    _units.code                   None
 
 save_
 
@@ -9773,7 +9805,7 @@ save_
 save_atom_sites_ortho.wave_vector_seq_id_list
 
     _definition.id                '_atom_sites_ortho.wave_vector_seq_id_list'
-    _definition.update            2019-09-25
+    _definition.update            2025-10-28
     _description.text
 ;
       A list of numeric codes that identifies the harmonics chosen for the
@@ -9790,6 +9822,7 @@ save_atom_sites_ortho.wave_vector_seq_id_list
     _type.contents                Integer
     _enumeration.range            0:
     _enumeration.default          [0]
+    _units.code                   None
 
 save_
 
@@ -9890,7 +9923,7 @@ save_
 save_cell.commen_supercell_matrix
 
     _definition.id                '_cell.commen_supercell_matrix'
-    _definition.update            2025-10-20
+    _definition.update            2025-10-28
     _description.text
 ;
       For commensurately modulated structures the transformation, T,
@@ -9912,6 +9945,7 @@ save_cell.commen_supercell_matrix
     _enumeration.default          [
                                    [1  0  0]  [0  1  0]  [0  0  1]
                                   ]
+    _units.code                   None
     _method.purpose               Evaluation
     _method.expression
 ;
@@ -9933,7 +9967,7 @@ save_cell.commen_supercell_matrix_1_1
 
     _definition.id                '_cell.commen_supercell_matrix_1_1'
     _alias.definition_id          '_jana_cell_commen_supercell_matrix_1_1'
-    _definition.update            2025-10-20
+    _definition.update            2025-10-28
     _description.text
 ;
      Element of _cell.commen_supercell_matrix.
@@ -9945,6 +9979,7 @@ save_cell.commen_supercell_matrix_1_1
     _type.container               Single
     _type.contents                Integer
     _enumeration.default          1
+    _units.code                   None
     _method.purpose               Evaluation
     _method.expression
 ;
@@ -9959,7 +9994,7 @@ save_cell.commen_supercell_matrix_1_2
 
     _definition.id                '_cell.commen_supercell_matrix_1_2'
     _alias.definition_id          '_jana_cell_commen_supercell_matrix_1_2'
-    _definition.update            2025-10-20
+    _definition.update            2025-10-28
     _description.text
 ;
      Element of _cell.commen_supercell_matrix.
@@ -9971,6 +10006,7 @@ save_cell.commen_supercell_matrix_1_2
     _type.container               Single
     _type.contents                Integer
     _enumeration.default          0
+    _units.code                   None
     _method.purpose               Evaluation
     _method.expression
 ;
@@ -9985,7 +10021,7 @@ save_cell.commen_supercell_matrix_1_3
 
     _definition.id                '_cell.commen_supercell_matrix_1_3'
     _alias.definition_id          '_jana_cell_commen_supercell_matrix_1_3'
-    _definition.update            2025-10-20
+    _definition.update            2025-10-28
     _description.text
 ;
      Element of _cell.commen_supercell_matrix.
@@ -9997,6 +10033,7 @@ save_cell.commen_supercell_matrix_1_3
     _type.container               Single
     _type.contents                Integer
     _enumeration.default          0
+    _units.code                   None
     _method.purpose               Evaluation
     _method.expression
 ;
@@ -10011,7 +10048,7 @@ save_cell.commen_supercell_matrix_2_1
 
     _definition.id                '_cell.commen_supercell_matrix_2_1'
     _alias.definition_id          '_jana_cell_commen_supercell_matrix_2_1'
-    _definition.update            2025-10-20
+    _definition.update            2025-10-28
     _description.text
 ;
      Element of _cell.commen_supercell_matrix.
@@ -10023,6 +10060,7 @@ save_cell.commen_supercell_matrix_2_1
     _type.container               Single
     _type.contents                Integer
     _enumeration.default          0
+    _units.code                   None
     _method.purpose               Evaluation
     _method.expression
 ;
@@ -10037,7 +10075,7 @@ save_cell.commen_supercell_matrix_2_2
 
     _definition.id                '_cell.commen_supercell_matrix_2_2'
     _alias.definition_id          '_jana_cell_commen_supercell_matrix_2_2'
-    _definition.update            2025-10-20
+    _definition.update            2025-10-28
     _description.text
 ;
      Element of _cell.commen_supercell_matrix.
@@ -10049,6 +10087,7 @@ save_cell.commen_supercell_matrix_2_2
     _type.container               Single
     _type.contents                Integer
     _enumeration.default          1
+    _units.code                   None
     _method.purpose               Evaluation
     _method.expression
 ;
@@ -10063,7 +10102,7 @@ save_cell.commen_supercell_matrix_2_3
 
     _definition.id                '_cell.commen_supercell_matrix_2_3'
     _alias.definition_id          '_jana_cell_commen_supercell_matrix_2_3'
-    _definition.update            2025-10-20
+    _definition.update            2025-10-28
     _description.text
 ;
      Element of _cell.commen_supercell_matrix.
@@ -10075,6 +10114,7 @@ save_cell.commen_supercell_matrix_2_3
     _type.container               Single
     _type.contents                Integer
     _enumeration.default          0
+    _units.code                   None
     _method.purpose               Evaluation
     _method.expression
 ;
@@ -10089,7 +10129,7 @@ save_cell.commen_supercell_matrix_3_1
 
     _definition.id                '_cell.commen_supercell_matrix_3_1'
     _alias.definition_id          '_jana_cell_commen_supercell_matrix_3_1'
-    _definition.update            2025-10-20
+    _definition.update            2025-10-28
     _description.text
 ;
      Element of _cell.commen_supercell_matrix.
@@ -10101,6 +10141,7 @@ save_cell.commen_supercell_matrix_3_1
     _type.container               Single
     _type.contents                Integer
     _enumeration.default          0
+    _units.code                   None
     _method.purpose               Evaluation
     _method.expression
 ;
@@ -10115,7 +10156,7 @@ save_cell.commen_supercell_matrix_3_2
 
     _definition.id                '_cell.commen_supercell_matrix_3_2'
     _alias.definition_id          '_jana_cell_commen_supercell_matrix_3_2'
-    _definition.update            2025-10-20
+    _definition.update            2025-10-28
     _description.text
 ;
      Element of _cell.commen_supercell_matrix.
@@ -10127,6 +10168,7 @@ save_cell.commen_supercell_matrix_3_2
     _type.container               Single
     _type.contents                Integer
     _enumeration.default          0
+    _units.code                   None
     _method.purpose               Evaluation
     _method.expression
 ;
@@ -10141,7 +10183,7 @@ save_cell.commen_supercell_matrix_3_3
 
     _definition.id                '_cell.commen_supercell_matrix_3_3'
     _alias.definition_id          '_jana_cell_commen_supercell_matrix_3_3'
-    _definition.update            2025-10-20
+    _definition.update            2025-10-28
     _description.text
 ;
      Element of _cell.commen_supercell_matrix.
@@ -10153,6 +10195,7 @@ save_cell.commen_supercell_matrix_3_3
     _type.container               Single
     _type.contents                Integer
     _enumeration.default          1
+    _units.code                   None
     _method.purpose               Evaluation
     _method.expression
 ;
@@ -10167,7 +10210,7 @@ save_cell.modulation_dimension
 
     _definition.id                '_cell.modulation_dimension'
     _alias.definition_id          '_cell_modulation_dimension'
-    _definition.update            2019-09-25
+    _definition.update            2025-10-28
     _description.text
 ;
       Number of additional reciprocal vectors needed to index the
@@ -10181,6 +10224,7 @@ save_cell.modulation_dimension
     _type.container               Single
     _type.contents                Integer
     _enumeration.range            1:9
+    _units.code                   None
 
 save_
 
@@ -10348,7 +10392,7 @@ save_
 save_cell_subsystem.matrix_w
 
     _definition.id                '_cell_subsystem.matrix_W'
-    _definition.update            2025-10-20
+    _definition.update            2025-10-28
     _description.text
 ;
       In the case of composites, for each subsystem the matrix W as
@@ -10437,6 +10481,7 @@ save_cell_subsystem.matrix_w
     _type.source                  Derived
     _type.container               Matrix
     _type.contents                Real
+    _units.code                   None
 
     loop_
       _method.purpose
@@ -13377,7 +13422,7 @@ save_cell_subsystems.number
 
     _definition.id                '_cell_subsystems.number'
     _alias.definition_id          '_cell_subsystems_number'
-    _definition.update            2019-09-25
+    _definition.update            2025-10-28
     _description.text
 ;
       The number of subsystems used to define the structural model of
@@ -13390,6 +13435,7 @@ save_cell_subsystems.number
     _type.container               Single
     _type.contents                Integer
     _enumeration.range            2:
+    _units.code                   None
 
 save_
 
@@ -13418,7 +13464,7 @@ save_cell_wave_vector.seq_id
 
     _definition.id                '_cell_wave_vector.seq_id'
     _alias.definition_id          '_cell_wave_vector_seq_id'
-    _definition.update            2019-09-25
+    _definition.update            2025-10-28
     _description.text
 ;
       A numeric code to identify each independent wave vector. These
@@ -13434,6 +13480,7 @@ save_cell_wave_vector.seq_id
     _type.contents                Integer
     _enumeration.range            1:
     _enumeration.default          1
+    _units.code                   None
 
 save_
 
@@ -14050,7 +14097,7 @@ save_
 save_diffrn_refln.index_m_list
 
     _definition.id                '_diffrn_refln.index_m_list'
-    _definition.update            2025-10-20
+    _definition.update            2025-10-28
     _description.text
 ;
       Additional Miller indices needed to write the reciprocal vector
@@ -14076,6 +14123,7 @@ save_diffrn_refln.index_m_list
     _type.source                  Derived
     _type.container               Matrix
     _type.contents                Integer
+    _units.code                   None
 
     loop_
       _method.purpose
@@ -14499,7 +14547,7 @@ save_
 save_diffrn_reflns.limit_index_m_max_list
 
     _definition.id                '_diffrn_reflns.limit_index_m_max_list'
-    _definition.update            2025-10-20
+    _definition.update            2025-10-28
     _description.text
 ;
       Maximum values of the additional Miller indices
@@ -14514,6 +14562,7 @@ save_diffrn_reflns.limit_index_m_max_list
     _type.source                  Derived
     _type.container               Matrix
     _type.contents                Integer
+    _units.code                   None
 
     loop_
       _method.purpose
@@ -14546,7 +14595,7 @@ save_
 save_diffrn_reflns.limit_index_m_min_list
 
     _definition.id                '_diffrn_reflns.limit_index_m_min_list'
-    _definition.update            2025-10-20
+    _definition.update            2025-10-28
     _description.text
 ;
       Minimum values of the additional Miller indices
@@ -14561,6 +14610,7 @@ save_diffrn_reflns.limit_index_m_min_list
     _type.source                  Derived
     _type.container               Matrix
     _type.contents                Integer
+    _units.code                   None
 
     loop_
       _method.purpose
@@ -14594,7 +14644,7 @@ save_diffrn_reflns.satellite_order_max
 
     _definition.id                '_diffrn_reflns.satellite_order_max'
     _alias.definition_id          '_diffrn_reflns_satellite_order_max'
-    _definition.update            2019-09-25
+    _definition.update            2025-10-28
     _description.text
 ;
       Maximum order of observed satellites.
@@ -14606,6 +14656,7 @@ save_diffrn_reflns.satellite_order_max
     _type.container               Single
     _type.contents                Integer
     _enumeration.range            0:
+    _units.code                   None
 
 save_
 
@@ -14820,7 +14871,7 @@ save_
 save_diffrn_standard_refln.index_m_list
 
     _definition.id                '_diffrn_standard_refln.index_m_list'
-    _definition.update            2025-10-20
+    _definition.update            2025-10-28
     _description.text
 ;
       Additional Miller indices needed to write the reciprocal vectors
@@ -14838,6 +14889,7 @@ save_diffrn_standard_refln.index_m_list
     _type.source                  Derived
     _type.container               Matrix
     _type.contents                Integer
+    _units.code                   None
 
     loop_
       _method.purpose
@@ -15121,7 +15173,7 @@ save_
 save_exptl_crystal_face.index_m_list
 
     _definition.id                '_exptl_crystal_face.index_m_list'
-    _definition.update            2025-10-20
+    _definition.update            2025-10-28
     _description.text
 ;
       Additional Miller indices of the crystal face associated with the
@@ -15137,6 +15189,7 @@ save_exptl_crystal_face.index_m_list
     _type.source                  Derived
     _type.container               Matrix
     _type.contents                Integer
+    _units.code                   None
 
     loop_
       _method.purpose
@@ -17081,7 +17134,7 @@ save_
 save_refln.index_m_list
 
     _definition.id                '_refln.index_m_list'
-    _definition.update            2025-10-20
+    _definition.update            2025-10-28
     _description.text
 ;
       Additional Miller indices of a particular reflection in the basis
@@ -17096,6 +17149,7 @@ save_refln.index_m_list
     _type.source                  Derived
     _type.container               Matrix
     _type.contents                Integer
+    _units.code                   None
 
     loop_
       _method.purpose
@@ -17525,7 +17579,7 @@ save_
 save_reflns.limit_index_m_max_list
 
     _definition.id                '_reflns.limit_index_m_max_list'
-    _definition.update            2025-10-20
+    _definition.update            2025-10-28
     _description.text
 ;
       Maximum of the additional Miller indices
@@ -17541,6 +17595,7 @@ save_reflns.limit_index_m_max_list
     _type.source                  Derived
     _type.container               Matrix
     _type.contents                Integer
+    _units.code                   None
 
     loop_
       _method.purpose
@@ -17573,7 +17628,7 @@ save_
 save_reflns.limit_index_m_min_list
 
     _definition.id                '_reflns.limit_index_m_min_list'
-    _definition.update            2025-10-20
+    _definition.update            2025-10-28
     _description.text
 ;
       Minimum values of the additional Miller indices
@@ -17589,6 +17644,7 @@ save_reflns.limit_index_m_min_list
     _type.source                  Derived
     _type.container               Matrix
     _type.contents                Integer
+    _units.code                   None
 
     loop_
       _method.purpose
@@ -17656,7 +17712,7 @@ save_superspace_group.it_number
 
     _definition.id                '_superspace_group.IT_number'
     _alias.definition_id          '_space_group_ssg_IT_number'
-    _definition.update            2025-06-04
+    _definition.update            2025-10-28
     _description.text
 ;
       Superspace-group number from International Tables for
@@ -17673,6 +17729,7 @@ save_superspace_group.it_number
     _type.container               Single
     _type.contents                Real
     _enumeration.range            1.1:
+    _units.code                   None
 
 save_
 
@@ -18109,7 +18166,7 @@ save_
 save_twin_refln.index_m_list
 
     _definition.id                '_twin_refln.index_m_list'
-    _definition.update            2025-10-20
+    _definition.update            2025-10-28
     _description.text
 ;
       Additional Miller indices for the modulated twin component
@@ -18125,6 +18182,7 @@ save_twin_refln.index_m_list
     _type.source                  Derived
     _type.container               Matrix
     _type.contents                Integer
+    _units.code                   None
 
     loop_
       _method.purpose
@@ -18493,7 +18551,7 @@ save_
         2024-12-12
         Technical fixes (JRH)
 ;
-         3.2.5                    2025-06-04
+         3.2.5                    2025-10-28
 ;
         _SPECIAL_FUNC categories, replaced by:
         _DISPLACE_SAWTOOTH
