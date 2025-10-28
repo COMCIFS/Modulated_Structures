@@ -73,12 +73,13 @@ jobs:
         with:
                 repository: jamesrhester/julia_cif_tools
                 path: julia_cif_tools
-
+# Checkout local version of master files to enable parallel updating.
+# Change this back to COMCIFS/cif_core after testing
       - name: Checkout CIF master files
         uses: actions/checkout@v4
         with:
-                repository: COMCIFS/cif_core
-                path: cif_core
+                repository: jamesrhester/cif_core
+                ref: ms_fixes_nov25
       - name: Diagnostics
         run: |
             ls -a
