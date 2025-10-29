@@ -868,7 +868,7 @@ save_atom_site_anharmonic_adp_fourier.wave_vector_seq_id
     _type.container               Single
     _type.contents                Integer
     _enumeration.range            0:
-    _units.code                   None
+    _units.code                   none
 
 save_
 
@@ -1324,7 +1324,7 @@ save_atom_site_anharmonic_adp_legendre.order
     _type.container               Single
     _type.contents                Integer
     _enumeration.range            0:
-    _units.code                   None
+    _units.code                   none
 
 save_
 
@@ -1762,7 +1762,7 @@ save_atom_site_anharmonic_adp_xharm.order
     _type.container               Single
     _type.contents                Integer
     _enumeration.range            0:
-    _units.code                   None
+    _units.code                   none
 
 save_
 
@@ -2109,7 +2109,7 @@ save_atom_site_displace_fourier.wave_vector_seq_id
     _type.container               Single
     _type.contents                Integer
     _enumeration.range            0:
-    _units.code                   None
+    _units.code                   none
 
 save_
 
@@ -2779,7 +2779,7 @@ save_atom_site_displace_legendre.order
     _type.container               Single
     _type.contents                Integer
     _enumeration.range            1:
-    _units.code                   None
+    _units.code                   none
 
 save_
 
@@ -3834,7 +3834,7 @@ save_atom_site_displace_xharm.order
     _type.container               Single
     _type.contents                Integer
     _enumeration.range            1:
-    _units.code                   None
+    _units.code                   none
 
 save_
 
@@ -4540,7 +4540,7 @@ save_atom_site_fourier_wave_vector.q_coeff
     _type.container               Matrix
     _type.contents                Integer
     _enumeration.default          [0]
-    _units.code                   None
+    _units.code                   none
 
     loop_
       _method.purpose
@@ -4592,7 +4592,7 @@ save_atom_site_fourier_wave_vector.q_coeff_seq_id
     _type.container               Matrix
     _type.contents                Integer
     _enumeration.default          [1]
-    _units.code                   None
+    _units.code                   none
 
     loop_
       _method.purpose
@@ -4638,7 +4638,7 @@ save_atom_site_fourier_wave_vector.seq_id
     _type.container               Single
     _type.contents                Integer
     _enumeration.range            0:
-    _units.code                   None
+    _units.code                   none
 
 save_
 
@@ -4662,7 +4662,7 @@ save_atom_site_fourier_wave_vector.x
     _type.container               Single
     _type.contents                Real
     _enumeration.default          0.0
-    _units.code                   None
+    _units.code                   none
     _method.purpose               Evaluation
     _method.expression
 ;
@@ -4692,7 +4692,7 @@ save_atom_site_fourier_wave_vector.xyz
     _type.container               Matrix
     _type.dimension               '[3]'
     _type.contents                Real
-    _units.code                   None
+    _units.code                   none
     _method.purpose               Evaluation
     _method.expression
 ;
@@ -4748,7 +4748,7 @@ save_atom_site_fourier_wave_vector.y
     _type.container               Single
     _type.contents                Real
     _enumeration.default          0.0
-    _units.code                   None
+    _units.code                   none
     _method.purpose               Evaluation
     _method.expression
 ;
@@ -4779,7 +4779,7 @@ save_atom_site_fourier_wave_vector.z
     _type.container               Single
     _type.contents                Real
     _enumeration.default          0.0
-    _units.code                   None
+    _units.code                   none
     _method.purpose               Evaluation
     _method.expression
 ;
@@ -4964,7 +4964,7 @@ save_atom_site_occ_crenel.ortho_eps
     _type.container               Single
     _type.contents                Real
     _enumeration.default          0.95
-    _units.code                   None
+    _units.code                   none
 
 save_
 
@@ -5164,7 +5164,7 @@ save_atom_site_occ_fourier.wave_vector_seq_id
     _type.container               Single
     _type.contents                Integer
     _enumeration.range            0:
-    _units.code                   None
+    _units.code                   none
 
 save_
 
@@ -5607,7 +5607,7 @@ save_atom_site_occ_legendre.order
     _type.container               Single
     _type.contents                Integer
     _enumeration.range            0:
-    _units.code                   None
+    _units.code                   none
 
 save_
 
@@ -5853,7 +5853,7 @@ save_atom_site_occ_xharm.order
     _type.container               Single
     _type.contents                Integer
     _enumeration.range            0:
-    _units.code                   None
+    _units.code                   none
 
 save_
 
@@ -6286,7 +6286,7 @@ save_atom_site_rot_fourier.wave_vector_seq_id
     _type.container               Single
     _type.contents                Integer
     _enumeration.range            0:
-    _units.code                   None
+    _units.code                   none
 
 save_
 
@@ -6953,7 +6953,7 @@ save_atom_site_rot_legendre.order
     _type.container               Single
     _type.contents                Integer
     _enumeration.range            0:
-    _units.code                   None
+    _units.code                   none
 
 save_
 
@@ -7664,7 +7664,7 @@ save_atom_site_rot_xharm.order
     _type.container               Single
     _type.contents                Integer
     _enumeration.range            0:
-    _units.code                   None
+    _units.code                   none
 
 save_
 
@@ -8063,7 +8063,7 @@ save_atom_site_u_fourier.wave_vector_seq_id
     _type.container               Single
     _type.contents                Integer
     _enumeration.range            0:
-    _units.code                   None
+    _units.code                   none
 
 save_
 
@@ -8638,7 +8638,7 @@ save_atom_site_u_legendre.order
     _type.container               Single
     _type.contents                Integer
     _enumeration.range            0:
-    _units.code                   None
+    _units.code                   none
 
 save_
 
@@ -9041,7 +9041,7 @@ save_atom_site_u_xharm.order
     _type.container               Single
     _type.contents                Integer
     _enumeration.range            0:
-    _units.code                   None
+    _units.code                   none
 
 save_
 
@@ -9151,7 +9151,7 @@ save_atom_sites_axes.matrix
                                    [1.0  0.0  0.0]  [0.0  1.0  0.0]
                                    [0.0  0.0  1.0]
                                   ]
-    _units.code                   None
+    _units.code                   none
 
 save_
 
@@ -9171,7 +9171,7 @@ save_atom_sites_axes.matrix_seq_id
     _type.container               Single
     _type.contents                Integer
     _enumeration.range            0:
-    _units.code                   None
+    _units.code                   none
 
 save_
 
@@ -9757,7 +9757,7 @@ save_atom_sites_ortho.coeff_cos_list
     _type.dimension               '[]'
     _type.contents                Real
     _enumeration.default          [0.0]
-    _units.code                   None
+    _units.code                   none
 
 save_
 
@@ -9779,7 +9779,7 @@ save_atom_sites_ortho.coeff_sin_list
     _type.dimension               '[]'
     _type.contents                Real
     _enumeration.default          [0.0]
-    _units.code                   None
+    _units.code                   none
 
 save_
 
@@ -9822,7 +9822,7 @@ save_atom_sites_ortho.wave_vector_seq_id_list
     _type.contents                Integer
     _enumeration.range            0:
     _enumeration.default          [0]
-    _units.code                   None
+    _units.code                   none
 
 save_
 
@@ -9945,7 +9945,7 @@ save_cell.commen_supercell_matrix
     _enumeration.default          [
                                    [1  0  0]  [0  1  0]  [0  0  1]
                                   ]
-    _units.code                   None
+    _units.code                   none
     _method.purpose               Evaluation
     _method.expression
 ;
@@ -9979,7 +9979,7 @@ save_cell.commen_supercell_matrix_1_1
     _type.container               Single
     _type.contents                Integer
     _enumeration.default          1
-    _units.code                   None
+    _units.code                   none
     _method.purpose               Evaluation
     _method.expression
 ;
@@ -10006,7 +10006,7 @@ save_cell.commen_supercell_matrix_1_2
     _type.container               Single
     _type.contents                Integer
     _enumeration.default          0
-    _units.code                   None
+    _units.code                   none
     _method.purpose               Evaluation
     _method.expression
 ;
@@ -10033,7 +10033,7 @@ save_cell.commen_supercell_matrix_1_3
     _type.container               Single
     _type.contents                Integer
     _enumeration.default          0
-    _units.code                   None
+    _units.code                   none
     _method.purpose               Evaluation
     _method.expression
 ;
@@ -10060,7 +10060,7 @@ save_cell.commen_supercell_matrix_2_1
     _type.container               Single
     _type.contents                Integer
     _enumeration.default          0
-    _units.code                   None
+    _units.code                   none
     _method.purpose               Evaluation
     _method.expression
 ;
@@ -10087,7 +10087,7 @@ save_cell.commen_supercell_matrix_2_2
     _type.container               Single
     _type.contents                Integer
     _enumeration.default          1
-    _units.code                   None
+    _units.code                   none
     _method.purpose               Evaluation
     _method.expression
 ;
@@ -10114,7 +10114,7 @@ save_cell.commen_supercell_matrix_2_3
     _type.container               Single
     _type.contents                Integer
     _enumeration.default          0
-    _units.code                   None
+    _units.code                   none
     _method.purpose               Evaluation
     _method.expression
 ;
@@ -10141,7 +10141,7 @@ save_cell.commen_supercell_matrix_3_1
     _type.container               Single
     _type.contents                Integer
     _enumeration.default          0
-    _units.code                   None
+    _units.code                   none
     _method.purpose               Evaluation
     _method.expression
 ;
@@ -10168,7 +10168,7 @@ save_cell.commen_supercell_matrix_3_2
     _type.container               Single
     _type.contents                Integer
     _enumeration.default          0
-    _units.code                   None
+    _units.code                   none
     _method.purpose               Evaluation
     _method.expression
 ;
@@ -10195,7 +10195,7 @@ save_cell.commen_supercell_matrix_3_3
     _type.container               Single
     _type.contents                Integer
     _enumeration.default          1
-    _units.code                   None
+    _units.code                   none
     _method.purpose               Evaluation
     _method.expression
 ;
@@ -10224,7 +10224,7 @@ save_cell.modulation_dimension
     _type.container               Single
     _type.contents                Integer
     _enumeration.range            1:9
-    _units.code                   None
+    _units.code                   none
 
 save_
 
@@ -10481,7 +10481,7 @@ save_cell_subsystem.matrix_w
     _type.source                  Derived
     _type.container               Matrix
     _type.contents                Real
-    _units.code                   None
+    _units.code                   none
 
     loop_
       _method.purpose
@@ -13435,7 +13435,7 @@ save_cell_subsystems.number
     _type.container               Single
     _type.contents                Integer
     _enumeration.range            2:
-    _units.code                   None
+    _units.code                   none
 
 save_
 
@@ -13480,7 +13480,7 @@ save_cell_wave_vector.seq_id
     _type.contents                Integer
     _enumeration.range            1:
     _enumeration.default          1
-    _units.code                   None
+    _units.code                   none
 
 save_
 
@@ -14123,7 +14123,7 @@ save_diffrn_refln.index_m_list
     _type.source                  Derived
     _type.container               Matrix
     _type.contents                Integer
-    _units.code                   None
+    _units.code                   none
 
     loop_
       _method.purpose
@@ -14562,7 +14562,7 @@ save_diffrn_reflns.limit_index_m_max_list
     _type.source                  Derived
     _type.container               Matrix
     _type.contents                Integer
-    _units.code                   None
+    _units.code                   none
 
     loop_
       _method.purpose
@@ -14610,7 +14610,7 @@ save_diffrn_reflns.limit_index_m_min_list
     _type.source                  Derived
     _type.container               Matrix
     _type.contents                Integer
-    _units.code                   None
+    _units.code                   none
 
     loop_
       _method.purpose
@@ -14656,7 +14656,7 @@ save_diffrn_reflns.satellite_order_max
     _type.container               Single
     _type.contents                Integer
     _enumeration.range            0:
-    _units.code                   None
+    _units.code                   none
 
 save_
 
@@ -14889,7 +14889,7 @@ save_diffrn_standard_refln.index_m_list
     _type.source                  Derived
     _type.container               Matrix
     _type.contents                Integer
-    _units.code                   None
+    _units.code                   none
 
     loop_
       _method.purpose
@@ -15189,7 +15189,7 @@ save_exptl_crystal_face.index_m_list
     _type.source                  Derived
     _type.container               Matrix
     _type.contents                Integer
-    _units.code                   None
+    _units.code                   none
 
     loop_
       _method.purpose
@@ -17149,7 +17149,7 @@ save_refln.index_m_list
     _type.source                  Derived
     _type.container               Matrix
     _type.contents                Integer
-    _units.code                   None
+    _units.code                   none
 
     loop_
       _method.purpose
@@ -17595,7 +17595,7 @@ save_reflns.limit_index_m_max_list
     _type.source                  Derived
     _type.container               Matrix
     _type.contents                Integer
-    _units.code                   None
+    _units.code                   none
 
     loop_
       _method.purpose
@@ -17644,7 +17644,7 @@ save_reflns.limit_index_m_min_list
     _type.source                  Derived
     _type.container               Matrix
     _type.contents                Integer
-    _units.code                   None
+    _units.code                   none
 
     loop_
       _method.purpose
@@ -17729,7 +17729,7 @@ save_superspace_group.it_number
     _type.container               Single
     _type.contents                Real
     _enumeration.range            1.1:
-    _units.code                   None
+    _units.code                   none
 
 save_
 
@@ -18182,7 +18182,7 @@ save_twin_refln.index_m_list
     _type.source                  Derived
     _type.container               Matrix
     _type.contents                Integer
-    _units.code                   None
+    _units.code                   none
 
     loop_
       _method.purpose
