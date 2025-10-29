@@ -3018,6 +3018,7 @@ save_atom_site_displace_ortho.coeff
 ;
     _name.category_id             atom_site_displace_ortho
     _name.object_id               coeff
+    _units.code                   none
 
     _import.get
         [{'file':templ_attr.cif  'save':general_mod_param}]
@@ -4586,7 +4587,6 @@ save_atom_site_fourier_wave_vector.q_coeff_seq_id
 ;
     _name.category_id             atom_site_Fourier_wave_vector
     _name.object_id               q_coeff_seq_id
-    _name.linked_item_id          '_cell_wave_vector.seq_id'
     _type.purpose                 Link
     _type.source                  Derived
     _type.container               Matrix
@@ -7720,7 +7720,7 @@ save_ATOM_SITE_ROT_ZIGZAG
 ;
     _name.category_id             CIF_MS_HEAD
     _name.object_id               ATOM_SITE_ROT_ZIGZAG
-    _category_key.name            '_atom_site_displace_zigzag.atom_site_label'
+    _category_key.name            '_atom_site_rot_zigzag.atom_site_label'
 
 save_
 
@@ -9242,8 +9242,8 @@ save_atom_sites_displace_fourier.axes_description
     loop_
       _definition_replaced.id
       _definition_replaced.by
-         1                        '_atom_site_displace_Fourier.matrix_seq_id'
-         2                        '_atom_site_displace_Fourier.matrix'
+         1                        '_atom_sites_axes.matrix_seq_id'
+         2                        '_atom_sites_axes.matrix'
          3                        '_atom_sites_axes.transf_description'
 
     _alias.definition_id
@@ -9831,13 +9831,11 @@ save_atom_sites_ortho.wave_vector_seq_id_list
 ;
     _name.category_id             atom_sites_ortho
     _name.object_id               wave_vector_seq_id_list
-    _name.linked_item_id          '_atom_site_Fourier_wave_vector.seq_id'
     _type.purpose                 Link
     _type.source                  Related
     _type.container               List
     _type.dimension               '[]'
     _type.contents                Integer
-    _enumeration.range            0:
     _enumeration.default          [0]
     _units.code                   none
 
