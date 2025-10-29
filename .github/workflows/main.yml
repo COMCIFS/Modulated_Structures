@@ -47,7 +47,7 @@ jobs:
                 ref: ms_fixes_nov25
                 path: cif-dictionaries/cif_core
         - name: check_ddlm
-          uses: COMCIFS/dictionary_check_action@main
+          uses: jamesrhester/dictionary_check_action@ms_dic_type_dimension
           id: ddlm_check
   layout:
     runs-on: ubuntu-latest
