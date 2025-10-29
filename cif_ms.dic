@@ -24,7 +24,7 @@ data_CIF_MS
     _dictionary.formalism         Modulated
     _dictionary.class             Instance
     _dictionary.version           3.2.5
-    _dictionary.date              2025-10-28
+    _dictionary.date              2025-10-29
     _dictionary.uri               http://www.iucr.org/cif/dic/cif_ms.dic
     _dictionary.ddl_conformance   4.1.0
     _dictionary.namespace         ModStruct
@@ -4587,7 +4587,7 @@ save_atom_site_fourier_wave_vector.q_coeff_seq_id
 ;
     _name.category_id             atom_site_Fourier_wave_vector
     _name.object_id               q_coeff_seq_id
-    _type.purpose                 Link
+    _type.purpose                 Number
     _type.source                  Derived
     _type.container               Matrix
     _type.contents                Integer
@@ -9831,7 +9831,7 @@ save_atom_sites_ortho.wave_vector_seq_id_list
 ;
     _name.category_id             atom_sites_ortho
     _name.object_id               wave_vector_seq_id_list
-    _type.purpose                 Link
+    _type.purpose                 Number
     _type.source                  Related
     _type.container               List
     _type.dimension               '[]'
@@ -18583,7 +18583,7 @@ save_
         2024-12-12
         Technical fixes (JRH)
 ;
-         3.2.5                    2025-10-28
+         3.2.5                    2025-10-29
 ;
         _SPECIAL_FUNC categories, replaced by:
         _DISPLACE_SAWTOOTH
