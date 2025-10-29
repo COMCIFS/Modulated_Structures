@@ -5929,6 +5929,23 @@ save_atom_site_phason.coeff
 
 save_
 
+save_atom_site_phason.coeff_su
+
+    _definition.id                '_atom_site_phason.coeff_su'
+    _definition.update            2025-10-29
+    _description.text
+;
+    Standard uncertainty of _atom_site_phason.coeff.
+;
+    _name.category_id             atom_site_phason
+    _name.object_id               coeff_su
+    _name.linked_item_id          '_atom_site_phason.coeff'
+    _units.code                   none
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
+
+save_
+
 save_atom_site_phason.formula
 
     _definition.id                '_atom_site_phason.formula'
@@ -16901,6 +16918,23 @@ save_refine.ls_mod_overall_phason_coeff
     _enumeration.range            0.0:
     _enumeration.default          0.0
     _units.code                   none
+
+save_
+
+save_refine.ls_mod_overall_phason_coeff_su
+
+    _definition.id                '_refine.ls_mod_overall_phason_coeff_su'
+    _definition.update            2025-10-29
+    _description.text
+;
+    Standard uncertainty of _refine.ls_mod_overall_phason_coeff.
+;
+    _name.category_id             refine
+    _name.object_id               ls_mod_overall_phason_coeff_su
+    _name.linked_item_id          '_refine.ls_mod_overall_phason_coeff'
+    _units.code                   none
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
 
 save_
 
