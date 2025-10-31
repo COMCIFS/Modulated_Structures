@@ -46,6 +46,18 @@ jobs:
                 repository: jamesrhester/cif_core
                 ref: ms_fixes_nov25
                 path: cif-dictionaries/cif_core
+        - name: Checkout multiblock files
+          uses: actions/checkout@v4
+          with:
+                repository: COMCIFS/MultiBlock_Dictionary
+                ref: main
+                path: cif-dictionaries/multiblock
+        - name: Checkout Twinning dictionary
+          uses: actions/checkout@v4
+          with:
+                repository: COMCIFS/Twinning_Dictionary
+                ref: master
+                path: cif-dictionaries/twinning
         - name: check_ddlm
           uses: jamesrhester/dictionary_check_action@ms_dic_type_dimension
           id: ddlm_check
