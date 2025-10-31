@@ -68,7 +68,6 @@ save_ATOM_SITE
     dictionary enhance those in cif_core.cif to cover modulated
     structures.
 ;
-;
     _name.category_id             ATOM
     _name.object_id               ATOM_SITE
 
