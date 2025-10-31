@@ -24,7 +24,7 @@ data_CIF_MS
     _dictionary.formalism         Modulated
     _dictionary.class             Instance
     _dictionary.version           3.2.5
-    _dictionary.date              2025-10-29
+    _dictionary.date              2025-10-31
     _dictionary.uri               http://www.iucr.org/cif/dic/cif_ms.dic
     _dictionary.ddl_conformance   4.1.0
     _dictionary.namespace         ModStruct
@@ -60,17 +60,22 @@ save_ATOM_SITE
     _definition.id                ATOM_SITE
     _definition.scope             Category
     _definition.class             Loop
-    _definition.update            2025-06-04
+    _definition.update            2025-10-31
     _description.text
 ;
-      The CATEGORY of data items used to describe atom site information
-      used in crystallographic structure studies. Items in this
-      dictionary enhance those in cif_core.cif to cover modulated
-      structures.
+    The CATEGORY of data items used to describe atom site information
+    used in crystallographic structure studies.  Items in this
+    dictionary enhance those in cif_core.cif to cover modulated
+    structures.
 ;
-    _name.category_id             CIF_MS_HEAD
+;
+    _name.category_id             ATOM
     _name.object_id               ATOM_SITE
-    _category_key.name            '_atom_site.label'
+
+    loop_
+      _category_key.name
+         '_atom_site.label'
+         '_atom_site.structure_id'
 
 save_
 
@@ -9894,8 +9899,8 @@ save_CELL
 
     _definition.id                CELL
     _definition.scope             Category
-    _definition.class             Loop
-    _definition.update            2025-06-04
+    _definition.class             Set
+    _definition.update            2025-10-31
     _description.text
 ;
       The category of data items used to describe the parameters of
@@ -9904,7 +9909,7 @@ save_CELL
 ;
     _name.category_id             CIF_MS_HEAD
     _name.object_id               CELL
-    _category_key.name            '_cell.diffrn_id'
+    _category_key.name            '_cell.structure_id'
     _description_example.case
 ;
     #\#CIF_2.0
