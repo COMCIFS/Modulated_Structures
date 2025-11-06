@@ -43,8 +43,8 @@ jobs:
         - name: Checkout CIF master files
           uses: actions/checkout@v4
           with:
-                repository: jamesrhester/cif_core
-                ref: ms_fixes_nov25
+                repository: COMCIFS/cif_core
+                ref: master
                 path: cif-dictionaries/cif_core
         - name: Checkout multiblock files
           uses: actions/checkout@v4
