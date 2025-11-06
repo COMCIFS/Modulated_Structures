@@ -59,7 +59,7 @@ jobs:
                 ref: main
                 path: cif-dictionaries/twinning
         - name: check_ddlm
-          uses: jamesrhester/dictionary_check_action@ms_dic_type_dimension
+          uses: COMCIFS/dictionary_check_action@main
           id: ddlm_check
   layout:
     runs-on: ubuntu-latest
