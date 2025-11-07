@@ -4103,7 +4103,7 @@ save_ATOM_SITE_FOURIER_WAVE_VECTOR
       components (see item _atom_site_Fourier_wave_vector.x,
       _atom_site_Fourier_wave_vector.y and _atom_site_Fourier_wave_vector.z)
       or expressed as k=n(1)q(1)+...+n(p)q(p), where p is given by
-      _cell_modulation_dimension (with a maximum value of 8).
+      _cell.modulation_dimension (with a maximum value of 8).
 
       In that case, _atom_site_Fourier_wave_vector.q_coeff contains the
       coefficients that express a given k as a linear combination of the
@@ -4534,7 +4534,7 @@ save_atom_site_fourier_wave_vector.q_coeff
     _description.text
 ;
       The list of coefficients that express a given k as a linear combination
-      of the _cell_modulation_dimension independent wave vectors given in
+      of the _cell.modulation_dimension independent wave vectors given in
       CELL_WAVE_VECTOR category. The enumeration of the independent wave
       vectors (1,2, ...,9) is given by thes value of
       _atom_site_Fourier_wave_vector.q_coeff_seq_id matching the
@@ -4586,7 +4586,7 @@ save_atom_site_fourier_wave_vector.q_coeff_seq_id
       The list of numeric codes that identifies each independent wave vector
       appearing in the linear combination that expresses a generic
       Fourier wave vector as k=n(1)q(1)+...+n(p)q(p), where p is given
-      by _cell_modulation_dimension. In the case of composites these wave
+      by _cell.modulation_dimension. In the case of composites these wave
       vectors are expressed with respect to the three-dimensional reciprocal
       basis of each subsystem (see _cell_subsystem.matrix_W_).The codes
       must match those given in _cell_wave_vector.seq_id.
@@ -10420,7 +10420,7 @@ save_cell_subsystem.matrix_w
       defined in van Smaalen (1991);  [see also van Smaalen (1995) or
       van Smaalen (2012)].
       Its dimension must match
-      (_cell_modulation_dimension+3)*(_cell_modulation_dimension+3).
+      (_cell.modulation_dimension+3)*(_cell.modulation_dimension+3).
 
       Intergrowth compounds are composed of several periodic
       substructures in which the reciprocal lattices of two different
@@ -10469,7 +10469,7 @@ save_cell_subsystem.matrix_w
       *_subsystem_code pointers, the cell parameters, the superspace
       group and the measured modulation wave vectors (see
       CELL_WAVE_VECTOR below) correspond to the reciprocal basis
-      described in _cell_reciprocal_basis_description and coincide
+      described in _cell.reciprocal_basis_description and coincide
       with the reciprocal basis of the specific subsystem (if any)
       whose W matrix is the unit matrix. The cell parameters and the
       symmetry of the remaining subsystems can be derived using the
@@ -13561,7 +13561,7 @@ save_cell_wave_vector.xyz
       the case of composites, the modulation wave vectors of each
       subsystem are expressed in terms of the reciprocal basis of its
       corresponding reference structure. Their number must match
-      _cell_modulation_dimension. In the case of composites described
+      _cell.modulation_dimension. In the case of composites described
       in a single data block, the wave
       vectors are expressed in the three-dimensional basis chosen as
       reference in _cell.reciprocal_basis_description, which would
@@ -14123,7 +14123,7 @@ save_diffrn_refln.index_m_list
 ;
       Additional Miller indices needed to write the reciprocal vector
       of a certain reflection in the basis described in
-      _cell_reciprocal_basis_description. Following the usual
+      _cell.reciprocal_basis_description. Following the usual
       convention, such a vector would be expressed as
 
                H=h*a*+k*b*+l*c*+m1*q(1)+...+m9*q(9),
@@ -15198,7 +15198,7 @@ save_exptl_crystal_face.index_m_list
     _description.text
 ;
       Additional Miller indices of the crystal face associated with the
-      value _exptl_crystal_face_perp_dist when the face is indexed
+      value _exptl_crystal_face.perp_dist when the face is indexed
       using a multidimensional scheme. The total number of indices must
       match (_cell.modulation_dimension + 3). The order of the indices
       must be consistent with the codes given in
@@ -17175,7 +17175,7 @@ save_refln.index_m_list
     _description.text
 ;
       Additional Miller indices of a particular reflection in the basis
-      described in _cell_reciprocal_basis_description. The total number
+      described in _cell.reciprocal_basis_description. The total number
       of indices must match (_cell.modulation_dimension + 3). The
       order of the additional indices must be consistent with the codes
       given in _cell_wave_vector.seq_id.
@@ -17621,7 +17621,7 @@ save_reflns.limit_index_m_max_list
 ;
       Maximum of the additional Miller indices
       appearing in _refln.index_m_. The number of ranges must match
-      _cell_modulation_dimension. The order of the additional indices
+      _cell.modulation_dimension. The order of the additional indices
       must be consistent with the codes given in
       _cell_wave_vector.seq_id. These need not be the same as
       the _diffrn_reflns.limit_index_m_max_list.
@@ -17670,7 +17670,7 @@ save_reflns.limit_index_m_min_list
 ;
       Minimum values of the additional Miller indices
       appearing in _refln.index_m_. The number of ranges must match
-      _cell_modulation_dimension. The order of the additional indices
+      _cell.modulation_dimension. The order of the additional indices
       must be consistent with the codes given in
       _cell_wave_vector.seq_id. These need not be the same as
       the _diffrn_reflns.limit_index_m_min_list.
@@ -17980,7 +17980,7 @@ save_superspace_group_symop.operation_algebraic
       A parsable string giving one of the symmetry operations of the
       superspace group in algebraic form. These data will generally be
       repeated in a loop. Use symbols as necessary according to
-      _cell_modulation_dimension.
+      _cell.modulation_dimension.
       All symmetry operations should be entered, including the
       identity operation, those for lattice centring and that for
       a centre of symmetry, if present. The symbolic notation for
