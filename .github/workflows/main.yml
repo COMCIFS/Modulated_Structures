@@ -38,7 +38,26 @@ jobs:
     steps:
         - name: checkout
           uses: actions/checkout@v4
-
+          # Checkout local version of master files to enable parallel updating.
+          # Remove this after testing
+        - name: Checkout CIF master files
+          uses: actions/checkout@v4
+          with:
+                repository: COMCIFS/cif_core
+                ref: master
+                path: cif-dictionaries/cif_core
+        - name: Checkout multiblock files
+          uses: actions/checkout@v4
+          with:
+                repository: COMCIFS/MultiBlock_Dictionary
+                ref: main
+                path: cif-dictionaries/multiblock
+        - name: Checkout Twinning dictionary
+          uses: actions/checkout@v4
+          with:
+                repository: COMCIFS/Twinning_Dictionary
+                ref: main
+                path: cif-dictionaries/twinning
         - name: check_ddlm
           uses: COMCIFS/dictionary_check_action@main
           id: ddlm_check
